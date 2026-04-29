@@ -1,1952 +1,2237 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>@portafolios_exclusivos</title>
-  <meta
-    name="description"
-    content="Catálogos en Colombia 🏡✨ Copas y decoración únicas para tu hogar y eventos. Diseños exclusivos con calidad y estilo para hacer cada ocasión especial."
-  />
-
-  <link rel="canonical" href="https://tirssagallery.com/catalogo/linktree" />
-
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="@portafolios_exclusivos" />
-  <meta
-    property="og:description"
-    content="Catálogos en Colombia 🏡✨ Copas y decoración únicas para tu hogar y eventos. Diseños exclusivos con calidad y estilo para hacer cada ocasión especial."
-  />
-  <meta property="og:url" content="https://tirssagallery.com/catalogo/linktree" />
-  <meta property="og:image" content="https://tirssagallery.com/plat1/" />
-  <meta property="og:image:secure_url" content="https://tirssagallery.com/plat1/" />
-  <meta property="og:image:alt" content="Miniatura de catalogos_actualizados" />
-
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="@portafolios_exclusivos" />
-  <meta
-    name="twitter:description"
-    content="Catálogos en Colombia 🏡✨ Copas y decoración únicas para tu hogar y eventos."
-  />
-  <meta name="twitter:image" content="https://tirssagallery.com/plat1/" />
-
-  <link
-    rel="manifest"
-    href="https://assets.production.linktr.ee/6297ae46f02963ffc13357a2327414464c31dd49/favicon/manifest.json"
-  />
-  <link
-    rel="icon"
-    href="https://assets.production.linktr.ee/profiles/_next/static/logo-assets/ms-icon-70x70.png"
-  />
-  <meta name="theme-color" content="#e9e4da" />
-
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
-    rel="stylesheet"
-  />
-
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    :root {
-      --bg: #b9b6af;
-      --card: #e9e4da;
-      --button: #f7f7f5;
-      --text: #22252b;
-      --muted: #5a5d64;
-      --shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-      --shadow-soft: 0 6px 18px rgba(0, 0, 0, 0.08);
-      --border-radius-main: 28px;
-      --border-radius-pill: 999px;
-    }
-
-    body {
-      font-family: 'Inter', sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      min-height: 100vh;
-      padding: 40px 18px;
-    }
-
-    .page {
-      width: 100%;
-      max-width: 610px;
-      margin: 0 auto;
-    }
-
-    .phone-shell {
-      background: var(--card);
-      border-radius: var(--border-radius-main);
-      padding: 18px 18px 26px;
-      box-shadow: var(--shadow);
-      position: relative;
-      min-height: calc(100vh - 80px);
-    }
-
-    .topbar {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 26px;
-    }
-
-    .circle-icon {
-      width: 40px;
-      height: 40px;
-      border: none;
-      border-radius: 50%;
-      background: rgba(255, 255, 255, 0.65);
-      display: grid;
-      place-items: center;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-      cursor: pointer;
-      transition: transform 0.18s ease, background 0.18s ease;
-    }
-
-    .circle-icon:hover {
-      transform: translateY(-1px);
-      background: rgba(255, 255, 255, 0.9);
-    }
-
-    .circle-icon svg {
-      width: 18px;
-      height: 18px;
-      stroke: #222;
-    }
-
-    .hero {
-      text-align: center;
-      padding: 0 10px;
-    }
-
-    .avatar {
-      width: 104px;
-      height: 104px;
-      border-radius: 50%;
-      overflow: hidden;
-      margin: 0 auto 14px;
-      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
-      background: #fff;
-    }
-
-    .avatar img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-
-    .profile-name {
-      font-size: 20px;
-      font-weight: 800;
-      line-height: 1.1;
-      margin-bottom: 8px;
-      letter-spacing: -0.02em;
-    }
-
-    .subtitle {
-      max-width: 420px;
-      margin: 0 auto 22px;
-      font-size: 13px;
-      line-height: 1.45;
-      color: #26282c;
-      font-weight: 500;
-    }
-
-    .links {
-      display: grid;
-      gap: 14px;
-      margin-top: 8px;
-    }
-
-    .catalog-row {
-      display: flex;
-      align-items: stretch;
-      gap: 10px;
-      width: 100%;
-    }
-
-    .catalog-main {
-      display: flex;
-      align-items: center;
-      gap: 14px;
-      flex: 1;
-      border: none;
-      background: var(--button);
-      border-radius: var(--border-radius-pill);
-      padding: 10px 14px;
-      text-align: left;
-      cursor: pointer;
-      box-shadow: var(--shadow-soft);
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
-      color: inherit;
-      min-height: 58px;
-    }
-
-    .catalog-main:hover,
-    .catalog-share:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
-    }
-
-    .catalog-main:active,
-    .catalog-share:active {
-      transform: translateY(0);
-    }
-
-    .catalog-share {
-      width: 58px;
-      min-width: 58px;
-      border: none;
-      background: var(--button);
-      border-radius: var(--border-radius-pill);
-      cursor: pointer;
-      box-shadow: var(--shadow-soft);
-      color: #7f8288;
-      font-size: 20px;
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
-    }
-
-    .thumb {
-      width: 42px;
-      height: 42px;
-      border-radius: 50%;
-      overflow: hidden;
-      flex: 0 0 42px;
-      background: #ddd;
-      box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.04);
-    }
-
-    .thumb img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-
-    .btn-text {
-      flex: 1;
-      text-align: center;
-      font-size: 14px;
-      font-weight: 500;
-      line-height: 1.2;
-      padding-right: 2px;
-    }
-
-    .status {
-      margin-top: 16px;
-      min-height: 18px;
-      font-size: 13px;
-      color: var(--muted);
-      text-align: center;
-    }
-
-    .share-cta-wrap {
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      margin-top: 24px;
-    }
-
-    .share-cta {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      min-height: 42px;
-      padding: 10px 18px;
-      background: #fff;
-      border-radius: 999px;
-      box-shadow: var(--shadow-soft);
-      font-size: 13px;
-      font-weight: 700;
-      color: #1f2328;
-      border: none;
-      cursor: pointer;
-      text-align: center;
-    }
-
-    .footer-mini {
-      margin-top: 12px;
-      text-align: center;
-      font-size: 10px;
-      opacity: 1;
-    }
-
-    .footer-mini a {
-      color: #a044ff;
-      text-decoration: none;
-      font-weight: 700;
-      transition: opacity 0.2s ease;
-    }
-
-    .footer-mini a:hover {
-      opacity: 0.82;
-    }
-
-
-    /* Landing de captura WhatsApp */
-    body.gate-active {
-      padding: 18px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    body.gate-active .page {
-      display: none;
-    }
-
-    .lead-gate {
-      width: 100%;
-      max-width: 610px;
-      margin: 0 auto;
-      display: none;
-    }
-
-    body.gate-active .lead-gate {
-      display: block;
-    }
-
-    .lead-card {
-      background: linear-gradient(180deg, #f7f3ec 0%, #e9e4da 100%);
-      border-radius: 32px;
-      padding: 34px 24px 26px;
-      box-shadow: 0 18px 45px rgba(0, 0, 0, 0.16);
-      border: 1px solid rgba(255, 255, 255, 0.55);
-      text-align: center;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .lead-card::before {
-      content: '';
-      position: absolute;
-      width: 180px;
-      height: 180px;
-      border-radius: 50%;
-      background: rgba(255, 255, 255, 0.42);
-      top: -70px;
-      right: -60px;
-    }
-
-    .lead-badge {
-      position: relative;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      min-height: 34px;
-      padding: 7px 14px;
-      border-radius: 999px;
-      background: rgba(255, 255, 255, 0.78);
-      font-size: 12px;
-      font-weight: 800;
-      color: #33363d;
-      margin-bottom: 18px;
-      box-shadow: var(--shadow-soft);
-    }
-
-    .lead-card h1 {
-      position: relative;
-      font-size: 28px;
-      line-height: 1.05;
-      letter-spacing: -0.04em;
-      margin-bottom: 12px;
-      color: #171a20;
-    }
-
-    .lead-copy {
-      position: relative;
-      max-width: 470px;
-      margin: 0 auto 22px;
-      color: #42464f;
-      font-size: 14px;
-      line-height: 1.52;
-      font-weight: 500;
-    }
-
-    .lead-form {
-      position: relative;
-      display: grid;
-      gap: 10px;
-      text-align: left;
-      max-width: 430px;
-      margin: 0 auto;
-    }
-
-    .lead-label {
-      font-size: 12px;
-      font-weight: 800;
-      color: #2f333b;
-      padding-left: 6px;
-      margin-top: 2px;
-    }
-
-    .lead-input,
-    .lead-select {
-      width: 100%;
-      min-height: 50px;
-      border: 1px solid rgba(0, 0, 0, 0.08);
-      border-radius: 999px;
-      background: rgba(255, 255, 255, 0.88);
-      color: #171a20;
-      font-size: 15px;
-      font-weight: 700;
-      padding: 0 18px;
-      outline: none;
-      box-shadow: var(--shadow-soft);
-    }
-
-    .lead-input:focus,
-    .lead-select:focus {
-      border-color: rgba(17, 24, 39, 0.38);
-      box-shadow: 0 0 0 4px rgba(17, 24, 39, 0.08), var(--shadow-soft);
-    }
-
-    .lead-consent {
-      display: flex;
-      align-items: flex-start;
-      gap: 9px;
-      font-size: 11px;
-      line-height: 1.35;
-      color: #4a4e56;
-      margin: 4px 4px 2px;
-      cursor: pointer;
-    }
-
-    .lead-consent input {
-      margin-top: 2px;
-      flex: 0 0 auto;
-    }
-
-    .lead-submit {
-      width: 100%;
-      min-height: 52px;
-      border: none;
-      border-radius: 999px;
-      background: #15171d;
-      color: #fff;
-      font-size: 15px;
-      font-weight: 900;
-      cursor: pointer;
-      margin-top: 6px;
-      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.18);
-      transition: transform 0.2s ease, opacity 0.2s ease;
-    }
-
-    .lead-submit:hover {
-      transform: translateY(-1px);
-    }
-
-    .lead-submit:disabled {
-      opacity: 0.68;
-      cursor: wait;
-      transform: none;
-    }
-
-    .lead-error {
-      min-height: 16px;
-      text-align: center;
-      color: #9f1239;
-      font-size: 12px;
-      font-weight: 700;
-    }
-
-    .lead-mini {
-      position: relative;
-      max-width: 380px;
-      margin: 12px auto 0;
-      font-size: 10.5px;
-      line-height: 1.35;
-      color: #636873;
-    }
-
-    .modal-overlay {
-      position: fixed;
-      inset: 0;
-      background: rgba(0, 0, 0, 0.34);
-      display: none;
-      align-items: center;
-      justify-content: center;
-      padding: 18px;
-      z-index: 9999;
-    }
-
-    .modal-overlay.active {
-      display: flex;
-    }
-
-    .share-modal {
-      width: 100%;
-      max-width: 410px;
-      background: #fff;
-      border-radius: 24px;
-      box-shadow: 0 30px 60px rgba(0, 0, 0, 0.24);
-      padding: 16px 16px 18px;
-      position: relative;
-      animation: popIn 0.18s ease;
-    }
-
-    @keyframes popIn {
-      from {
-        transform: scale(0.96);
-        opacity: 0.6;
-      }
-      to {
-        transform: scale(1);
-        opacity: 1;
-      }
-    }
-
-    .modal-head {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      position: relative;
-      margin-bottom: 10px;
-    }
-
-    .modal-title {
-      font-size: 16px;
-      font-weight: 800;
-      text-align: center;
-    }
-
-    .modal-close {
-      position: absolute;
-      right: 0;
-      top: 0;
-      width: 32px;
-      height: 32px;
-      border: none;
-      background: transparent;
-      border-radius: 50%;
-      cursor: pointer;
-      font-size: 22px;
-      line-height: 1;
-      color: #4f535a;
-    }
-
-    .modal-close:hover {
-      background: #f2f2f2;
-    }
-
-    .share-preview-card {
-      width: 100%;
-      max-width: 210px;
-      margin: 6px auto 18px;
-      background: #f7f7f7;
-      border-radius: 18px;
-      border: 1px solid rgba(0, 0, 0, 0.08);
-      padding: 14px 12px;
-      text-align: center;
-      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
-    }
-
-    .preview-image {
-      width: 82px;
-      height: 82px;
-      border-radius: 16px;
-      overflow: hidden;
-      margin: 0 auto 10px;
-      background: #ececec;
-    }
-
-    .preview-image.circle {
-      border-radius: 50%;
-    }
-
-    .preview-image img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-
-    .preview-title {
-      font-size: 14px;
-      font-weight: 800;
-      line-height: 1.15;
-      margin-bottom: 6px;
-      color: #111;
-    }
-
-    .preview-subtitle {
-      font-size: 11px;
-      color: #555b63;
-      line-height: 1.35;
-      word-break: break-word;
-      display: none;
-    }
-
-    .share-options {
-      display: flex;
-      justify-content: center;
-      gap: 18px;
-      margin: 4px 0 18px;
-      flex-wrap: wrap;
-    }
-
-    .share-item {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 7px;
-      width: 82px;
-      text-decoration: none;
-      color: inherit;
-      border: none;
-      background: transparent;
-      cursor: pointer;
-      font-family: inherit;
-    }
-
-    .share-item .icon-wrap {
-      width: 54px;
-      height: 54px;
-      border-radius: 50%;
-      display: grid;
-      place-items: center;
-      background: #f3f4f6;
-      box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.04);
-    }
-
-    .share-item span {
-      font-size: 12px;
-      font-weight: 600;
-      color: #272b31;
-      text-align: center;
-      line-height: 1.2;
-    }
-
-    .copy-wrap {
-      background: #f7f7f7;
-      border-radius: 16px;
-      padding: 14px;
-      margin-top: 4px;
-      border: 1px solid rgba(0, 0, 0, 0.06);
-    }
-
-    .copy-title {
-      font-size: 13px;
-      font-weight: 700;
-      margin-bottom: 8px;
-    }
-
-    .copy-url {
-      font-size: 12px;
-      color: #575c63;
-      word-break: break-all;
-      margin-bottom: 12px;
-      line-height: 1.35;
-      display: none;
-    }
-
-    .copy-btn {
-      width: 100%;
-      min-height: 42px;
-      border: none;
-      border-radius: 999px;
-      background: #111;
-      color: #fff;
-      font-size: 14px;
-      font-weight: 800;
-      cursor: pointer;
-    }
-
-    .copy-btn.copied {
-      background: #1d7f47;
-    }
-
-    @media (max-width: 680px) {
-      body {
-        padding: 8px;
-      }
-
-      body.gate-active {
-        padding: 10px;
-      }
-
-      .lead-card {
-        border-radius: 26px;
-        padding: 28px 18px 22px;
-      }
-
-      .lead-card h1 {
-        font-size: 24px;
-      }
-
-      .lead-copy {
-        font-size: 13px;
-      }
-
-      .page {
-        max-width: 100%;
-      }
-
-      .phone-shell {
-        min-height: calc(100vh - 16px);
-        border-radius: 24px;
-        padding: 14px 14px 22px;
-      }
-
-      .profile-name {
-        font-size: 17px;
-      }
-
-      .subtitle {
-        font-size: 12px;
-        max-width: 330px;
-      }
-
-      .btn-text {
-        font-size: 13px;
-      }
-
-      .catalog-share {
-        width: 52px;
-        min-width: 52px;
-      }
-
-      .share-cta-wrap {
-        justify-content: center;
-      }
-    }
-  </style>
-</head>
-<body class="gate-active">
-  <div class="lead-gate" id="leadGate" aria-labelledby="leadGateTitle">
-    <div class="lead-card">
-      <div class="lead-badge">Atención personalizada ✨</div>
-      <h1 id="leadGateTitle">Antes de ver nuestros catálogos</h1>
-      <p class="lead-copy">Regálenos su número de WhatsApp para brindarle una mejor experiencia, asesoría rápida y acompañamiento personalizado según el producto que esté buscando.</p>
-
-      <form id="leadPhoneForm" class="lead-form" autocomplete="on">
-        <label class="lead-label" for="customerCountry">País</label>
-        <select id="customerCountry" class="lead-select" name="customerCountry" required>
-          <option value="CO" selected>Colombia +57</option>
-          <option value="MX">México +52</option>
-          <option value="OTHER">Otro país</option>
-        </select>
-
-        <label class="lead-label" for="customerPhone">Número de WhatsApp</label>
-        <input
-          id="customerPhone"
-          class="lead-input"
-          name="customerPhone"
-          type="tel"
-          inputmode="tel"
-          autocomplete="tel"
-          placeholder="Ej: 300 123 4567"
-          required
-        />
-
-        <label class="lead-consent">
-          <input id="customerConsent" type="checkbox" required />
-          <span>Acepto ser contactado(a) por WhatsApp para recibir asesoría sobre catálogos, productos y cotizaciones.</span>
-        </label>
-
-        <button class="lead-submit" id="leadSubmitBtn" type="submit">Ir a catálogos</button>
-        <div class="lead-error" id="leadError" role="alert"></div>
-      </form>
-
-      <p class="lead-mini">Su número se usará solo para atención comercial.</p>
-    </div>
-  </div>
-
-  <div class="page">
-    <div class="phone-shell">
-      <div class="topbar">
-        <button class="circle-icon" aria-label="Inicio">
-          <svg viewBox="0 0 24 24" fill="none" stroke-width="2">
-            <path d="M12 3l1.9 5.8H20l-4.9 3.6 1.9 5.8L12 14.6 7 18.2l1.9-5.8L4 8.8h6.1L12 3z"></path>
-          </svg>
-        </button>
-
-        <button class="circle-icon" id="shareBtn" aria-label="Compartir Linktree">
-          <svg viewBox="0 0 24 24" fill="none" stroke-width="2">
-            <path d="M12 16V4"></path>
-            <path d="M8 8l4-4 4 4"></path>
-            <path d="M5 14v4a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4"></path>
-          </svg>
-        </button>
-      </div>
-
-      <div class="hero">
-        <div class="avatar">
-          <img
-            id="heroAvatar"
-            src="https://tirssagallery.com/plat/"
-            alt="catalogos_actualizados"
-            onerror="this.src='https://tirssagallery.com/wp-content/uploads/2025/01/logo.jpg'"
-          />
-        </div>
-
-        <div class="profile-name">@portafolios_exclusivos</div>
-
-        <p class="subtitle">
-          Catálogos en Colombia 🏡✨ Copas y decoración únicas para tu hogar y eventos.
-          Diseños exclusivos con calidad y estilo para hacer cada ocasión especial.
-        </p>
-      </div>
-
-      <div class="links" id="links"></div>
-
-      <div class="status" id="status">Selecciona un catálogo</div>
-
-      <div class="share-cta-wrap">
-        <button class="share-cta" id="shareBottomBtn" type="button">
-          Únete a catalogos_actualizados en Linktree
-        </button>
-      </div>
-
-      <div class="footer-mini">
-        <a href="https://cactosmediaagency.com/" target="_blank" rel="noopener noreferrer">
-          Created by Cactos Media Agency
-        </a>
-      </div>
-    </div>
-  </div>
-
-  <div class="modal-overlay" id="shareModal">
-    <div class="share-modal" role="dialog" aria-modal="true" aria-labelledby="shareModalTitle">
-      <div class="modal-head">
-        <div class="modal-title" id="shareModalTitle">Compartir</div>
-        <button class="modal-close" id="closeModalBtn" aria-label="Cerrar">×</button>
-      </div>
-
-      <div class="share-preview-card">
-        <div class="preview-image" id="previewImageWrap">
-          <img id="previewImage" src="" alt="Vista previa de compartir" />
-        </div>
-        <div class="preview-title" id="previewTitle"></div>
-        <div class="preview-subtitle" id="previewSubtitle"></div>
-      </div>
-
-      <div class="share-options">
-        <button class="share-item" id="copyLinkTopBtn" type="button">
-          <div class="icon-wrap">
-            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#111" stroke-width="2">
-              <path d="M10 13a5 5 0 0 0 7.07 0l2.83-2.83a5 5 0 0 0-7.07-7.07L11 4"></path>
-              <path d="M14 11a5 5 0 0 0-7.07 0L4.1 13.83a5 5 0 0 0 7.07 7.07L13 20"></path>
-            </svg>
-          </div>
-          <span>Copiar link</span>
-        </button>
-
-        <button class="share-item" id="shareWhatsappBtn" type="button">
-          <div class="icon-wrap">
-            <svg viewBox="0 0 24 24" width="24" height="24" fill="#25D366">
-              <path d="M20.52 3.48A11.86 11.86 0 0 0 12.07 0C5.5 0 .16 5.34.16 11.92c0 2.1.55 4.14 1.59 5.95L0 24l6.32-1.66a11.9 11.9 0 0 0 5.75 1.47h.01c6.57 0 11.91-5.35 11.92-11.92 0-3.18-1.24-6.17-3.48-8.41zM12.08 21.8h-.01a9.88 9.88 0 0 1-5.03-1.37l-.36-.21-3.75.98 1-3.65-.24-.37a9.87 9.87 0 0 1-1.51-5.28C2.19 6.45 6.64 2 12.08 2c2.64 0 5.13 1.03 7 2.9a9.83 9.83 0 0 1 2.9 7c0 5.45-4.44 9.89-9.9 9.9zm5.43-7.43c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.64.07-.3-.15-1.26-.46-2.39-1.48-.88-.78-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.21-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.06 2.88 1.21 3.08c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.22 1.36.19 1.87.11.57-.08 1.76-.72 2.01-1.42.25-.69.25-1.29.17-1.42-.08-.12-.27-.2-.57-.35z"></path>
-            </svg>
-          </div>
-          <span>WhatsApp</span>
-        </button>
-      </div>
-
-      <div class="copy-wrap">
-        <div class="copy-title" id="copyTitle">Comparte este enlace</div>
-        <div class="copy-url" id="shareUrlText"></div>
-        <button class="copy-btn" id="copyLinkBtn" type="button">Copiar enlace</button>
-      </div>
-    </div>
-  </div>
-
-  
-  <script>
-    const CONFIG = {
-  TRACKING_URL:
-    'https://script.google.com/macros/s/AKfycbzV_4lRzooHD1KXdOMmEXKYLXheOn81kMw7Y-RniJ7g2_b-l47yVxFQ4OxkOgN417CU/exec',
-  META_PIXEL_ID: '2176242222768908',
-  ENABLE_PIXEL: false,
-  SRC: 'tirssa-landing',
-  CAMPAIGN: 'catalogos_home',
-  LINKTREE_NAME: '@portafolios_exclusivos',
-  LINKTREE_HANDLE: 'catalogos_actualizados',
-  LINKTREE_URL: 'https://tirssagallery.com/catalogo/linktree',
-  LINKTREE_SHARE_URL:
-    'https://tirssagallery.com/catalogo/linktree?utm_source=linktree&utm_medium=share&utm_campaign=linktree_compartido&utm_content=top_share_button&utm_term=organico',
-  LINKTREE_COVER_IMAGE: 'https://tirssagallery.com/plat/',
-  LINKTREE_COVER_FALLBACK: 'https://tirssagallery.com/wp-content/uploads/2025/01/logo.jpg',
-  LINKTREE_SHARE_IMAGE: 'https://tirssagallery.com/plat1/',
-  LINKTREE_SHARE_FALLBACK: 'https://tirssagallery.com/wp-content/uploads/2025/01/logo.jpg',
-  REQUIRE_WHATSAPP_BEFORE_CATALOGS: true,
-  LINKTREE_DESCRIPTION:
-    'Catálogos en Colombia 🏡✨ Copas y decoración únicas para tu hogar y eventos. Diseños exclusivos con calidad y estilo para hacer cada ocasión especial.',
-  AGOTADOS_CHANNEL_URL:
-    'https://whatsapp.com/channel/0029Va1oL4pFCCoR0tMaki2B?utm_source=linktree&utm_medium=cta&utm_campaign=join_channel&utm_content=bottom_button&utm_term=agotados'
+const SHEET_ID = '1HlDZ3Fvd5Qtrq9vOWuJeGEdm3kBklIaEhI8-rDXrnMc';
+const SHEET_NAME = 'Hoja 1';
+
+const META_CONFIG = {
+  PIXEL_ID: '2176242222768908',
+  ACCESS_TOKEN:
+    'EAAOxQg2dbPQBRAECPQXPTihcl1xlDw9YEuZBxS93jB1cZB4QuvKTr7a5i7TEkO5ZAmOPFGGJ7RZA8DRC5ZC0c94IIOiGgMWd3qBVyhyk2Eosh5DcdQcAiuEUWq4GEutvwaWWHM1OeC85zHOyfICKrR2ZCJzI8mKiQdgqxZCeEjJJZA6FnxHZAEBT2fzDpWl4AxldIegZDZD',
+  API_VERSION: 'v25.0',
+  AUTO_SEND_CAPI: false,
+  TEST_EVENT_CODE: '',
+  MAX_ROWS_PER_MANUAL_SEND: 200
 };
 
-    const CATALOGOS = [
-    
+const IP_GEO_CONFIG = {
+  ENABLED: true,
+  CACHE_TTL_SEC: 21600, // 6 horas
+  CACHE_VERSION: 'v2'
+};
 
-      {
-  catalogo: 'copas',
-  titulo: 'Copas, Vasos, Cubiertos, Servilleteros y Más!',
-  img: 'https://tirssagallery.com/copa/',
-  fallbackImg: 'https://tirssagallery.com/wp-content/uploads/2025/01/copas.jpg',
-  target: 'https://canva.link/copas',
-  shareUrl: 'https://canva.link/copas?utm_source=linktree&utm_medium=share&utm_campaign=catalogo_compartido&utm_content=copas&utm_term=modal',
-  whatsappUrl: 'https://canva.link/copas?utm_source=linktree&utm_medium=whatsapp&utm_campaign=catalogo_compartido&utm_content=copas&utm_term=modal',
-  copyUrl: 'https://canva.link/copas?utm_source=linktree&utm_medium=copy&utm_campaign=catalogo_compartido&utm_content=copas&utm_term=modal',
-  openInNewTab: true
-},
-      {
-        catalogo: 'platos',
-        titulo: 'Platos, Vajillas, Individuales y Más!.pdf',
-        img: 'https://tirssagallery.com/plato/',
-        fallbackImg: 'https://tirssagallery.com/wp-content/uploads/2025/01/platos.jpg',
-        target: 'https://canva.link/platos',
-        shareUrl: 'https://canva.link/platos?utm_source=linktree&utm_medium=share&utm_campaign=catalogo_compartido&utm_content=platos&utm_term=modal',
-  whatsappUrl: 'https://canva.link/platos?utm_source=linktree&utm_medium=whatsapp&utm_campaign=catalogo_compartido&utm_content=platos&utm_term=modal',
-  copyUrl: 'https://canva.link/platos?utm_source=linktree&utm_medium=copy&utm_campaign=catalogo_compartido&utm_content=platos&utm_term=modal',
-  openInNewTab: true
+const SHEET_HEADERS = [
+  'Fecha',
+  'Catalogo',
+  'Fuente',
+  'Campaña',
+  'Destino',
+  'Dispositivo',
+  'SO',
+  'Navegador',
+  'Resolucion',
+  'Idioma',
+  'Timezone',
+  'Referer',
+  'SessionID',
+  'SecondsToClick',
+  'UTM_Source',
+  'UTM_Medium',
+  'UTM_Campaign',
+  'UTM_Content',
+  'UTM_Term',
+  'UserAgent',
+  'PageURL',
+  'VisitorID',
+  'EventName',
+  'EventID',
+  'EventSource',
+  'FirstLandingURL',
+  'FirstReferer',
+  'FirstUTM_Source',
+  'FirstUTM_Medium',
+  'FirstUTM_Campaign',
+  'FirstUTM_Content',
+  'FirstUTM_Term',
+  'LastUTM_Source',
+  'LastUTM_Medium',
+  'LastUTM_Campaign',
+  'LastUTM_Content',
+  'LastUTM_Term',
+  'FBCLID',
+  'FBP',
+  'FBC',
+  'EngagedSeconds',
+  'ScrollPercent',
+  'CatalogPosition',
+  'TargetDomain',
+  'ClickCountSession',
+  'CatalogsViewedSession',
+  'ReturningUser',
+  'LocalHour',
+  'LocalDayOfWeek',
+  'IntentScore',
+  'SentToMeta',
+  'MetaResponse',
+  'MetaEventName',
+  'MetaEventID',
+  'MetaActionSource',
+  'IP',
+  'ExternalID',
+  'Currency',
+  'Value',
+  'CustomerEmail',
+  'CustomerPhone',
+  'CustomerFirstName',
+  'CustomerLastName',
+  'CustomerCity',
+  'CustomerRegion',
+  'CustomerCountry',
+  'LeadStatus',
+  'OrderID',
+  'MetaSentAt',
 
-      },
-      {
-        catalogo: 'torteras',
-        titulo: 'Torteras, Hieleras, Bandejas, Cofres y Bomboneras.pdf',
-        img: 'https://tirssagallery.com/tortera/',
-        fallbackImg: 'https://tirssagallery.com/wp-content/uploads/2025/01/torteras.jpg',
-        target: 'https://www.canva.com/design/DAG-aoc2DMg/3jW971yPF66l62oi9KuwkQ/view',
-        shareUrl: 'https://www.canva.com/design/DAG-aoc2DMg/3jW971yPF66l62oi9KuwkQ/view?utm_source=linktree&utm_medium=share&utm_campaign=catalogo_compartido&utm_content=torteras&utm_term=modal',
-  whatsappUrl: 'https://www.canva.com/design/DAG-aoc2DMg/3jW971yPF66l62oi9KuwkQ/view?utm_source=linktree&utm_medium=whatsapp&utm_campaign=catalogo_compartido&utm_content=torteras&utm_term=modal',
-  copyUrl: 'https://www.canva.com/design/DAG-aoc2DMg/3jW971yPF66l62oi9KuwkQ/view?utm_source=linktree&utm_medium=copy&utm_campaign=catalogo_compartido&utm_content=torteras&utm_term=modal',
-  openInNewTab: true
+  // GEO IP
+  'IP_City',
+  'IP_Region',
+  'IP_RegionCode',
+  'IP_CountryName',
+  'IP_CountryCode',
+  'IP_Postal',
+  'IP_Latitude',
+  'IP_Longitude',
+  'IP_LookupTimezone',
+  'IP_Org',
+  'IP_ASN'
+];
 
-      },
-      {
-        catalogo: 'candelabros',
-        titulo: 'Candelabros, Briseros, Faroles y Velas.pdf',
-        img: 'https://tirssagallery.com/candelabro/',
-        fallbackImg: 'https://tirssagallery.com/wp-content/uploads/2025/01/candelabros.jpg',
-        target: 'https://www.canva.com/design/DAGJKv5ajBs/bEBAmdQAmMLoD5l1Y1oa9Q/view',
-        shareUrl: 'https://www.canva.com/design/DAGJKv5ajBs/bEBAmdQAmMLoD5l1Y1oa9Q/view?utm_source=linktree&utm_medium=share&utm_campaign=catalogo_compartido&utm_content=candelabros&utm_term=modal',
-  whatsappUrl: 'https://www.canva.com/design/DAGJKv5ajBs/bEBAmdQAmMLoD5l1Y1oa9Q/view?utm_source=linktree&utm_medium=whatsapp&utm_campaign=catalogo_compartido&utm_content=candelabros&utm_term=modal',
-  copyUrl: 'https://www.canva.com/design/DAGJKv5ajBs/bEBAmdQAmMLoD5l1Y1oa9Q/view?utm_source=linktree&utm_medium=copy&utm_campaign=catalogo_compartido&utm_content=candelabros&utm_term=modal',
-  openInNewTab: true
+function onOpen() {
+  buildTrackingMenu_();
+  if (typeof buildDashboardMenu_ === 'function') {
+    buildDashboardMenu_();
+  }
+}
 
-      },
-      {
-        catalogo: 'anforas',
-        titulo:
-          'Anforas, floreros, bases metálicas para flores y centros de mesa.pdf',
-        img: 'https://tirssagallery.com/anfora/',
-        fallbackImg: 'https://tirssagallery.com/wp-content/uploads/2025/01/anforas.jpg',
-        target: 'https://canva.link/anforas',
-        shareUrl: 'https://canva.link/anforas?utm_source=linktree&utm_medium=share&utm_campaign=catalogo_compartido&utm_content=anforas&utm_term=modal',
-  whatsappUrl: 'https://canva.link/anforas?utm_source=linktree&utm_medium=whatsapp&utm_campaign=catalogo_compartido&utm_content=anforas&utm_term=modal',
-  copyUrl: 'https://canva.link/anforas?utm_source=linktree&utm_medium=copy&utm_campaign=catalogo_compartido&utm_content=anforas&utm_term=modal',
-  openInNewTab: true
+function buildTrackingMenu_() {
+  SpreadsheetApp.getUi()
+    .createMenu('Meta Leads / Utilidades')
+    .addItem('Preparar Hoja 1', 'setupTrackingSheet')
+    .addItem('Enviar a Meta (filas NO enviadas)', 'sendPendingRowsToMeta')
+    .addItem('Enriquecer / corregir IPs antiguas', 'enrichExistingIpRows')
+    .addSeparator()
+    .addItem('Preparar hoja Lead', 'setupLeadSheet')
+    .addItem('Reconstruir Lead desde Hoja 1', 'rebuildLeadSheetFromTracking')
+    .addToUi();
+}
 
-      },
-      {
-        catalogo: 'flores',
-        titulo: 'Flores - Plantas - Follajes.pdf',
-        img: 'https://tirssagallery.com/flor/',
-        fallbackImg: 'https://tirssagallery.com/wp-content/uploads/2025/01/flores.jpg',
-        target: 'https://www.canva.com/design/DAGLDbAGx34/1-q_02gUCVNbdKXPv5YdsQ/view',
-        shareUrl: 'https://www.canva.com/design/DAGLDbAGx34/1-q_02gUCVNbdKXPv5YdsQ/view?utm_source=linktree&utm_medium=share&utm_campaign=catalogo_compartido&utm_content=flores&utm_term=modal',
-  whatsappUrl: 'https://www.canva.com/design/DAGLDbAGx34/1-q_02gUCVNbdKXPv5YdsQ/view?utm_source=linktree&utm_medium=whatsapp&utm_campaign=catalogo_compartido&utm_content=flores&utm_term=modal',
-  copyUrl: 'https://www.canva.com/design/DAGLDbAGx34/1-q_02gUCVNbdKXPv5YdsQ/view?utm_source=linktree&utm_medium=copy&utm_campaign=catalogo_compartido&utm_content=flores&utm_term=modal',
-  openInNewTab: true
+function setupTrackingSheet() {
+  const ss = SpreadsheetApp.openById(SHEET_ID);
+  const sheet = ss.getSheetByName(SHEET_NAME) || ss.insertSheet(SHEET_NAME);
 
+  ensureHeaders_(sheet);
+  formatTrackingSheet_(sheet);
 
-      },
-      {
-        catalogo: 'decoracion',
-        titulo:
-          'Decoración - Libros - Portaretratos - Bandejas - Recordatorios - Religiosos.pdf',
-        img: 'https://tirssagallery.com/deco/',
-        fallbackImg: 'https://tirssagallery.com/wp-content/uploads/2025/01/decoracion.jpg',
-        target: 'https://canva.link/zm2456w9o0i0seh',
-        shareUrl: 'https://canva.link/zm2456w9o0i0seh?utm_source=linktree&utm_medium=share&utm_campaign=catalogo_compartido&utm_content=decoracion&utm_term=modal',
-  whatsappUrl: 'https://canva.link/zm2456w9o0i0seh?utm_source=linktree&utm_medium=whatsapp&utm_campaign=catalogo_compartido&utm_content=decoracion&utm_term=modal',
-  copyUrl: 'https://canva.link/zm2456w9o0i0seh?utm_source=linktree&utm_medium=copy&utm_campaign=catalogo_compartido&utm_content=decoracion&utm_term=modal',
-  openInNewTab: true
+  SpreadsheetApp.getUi().alert(
+    'Hoja 1 lista. Encabezados verificados y columnas GEO IP preparadas.'
+  );
+}
 
+function doGet(e) {
+  return handleRequest_(e);
+}
 
-      },
-      {
-        catalogo: 'lamparas',
-        titulo: 'Lámparas .pdf',
-        img: 'https://tirssagallery.com/lampara/',
-        fallbackImg: 'https://tirssagallery.com/wp-content/uploads/2025/01/lamparas.jpg',
-        target: 'https://www.canva.com/design/DAGNR1AKJM8/Y-MbDX1h0X_VA3vaJ9Fq-g/view',
-        shareUrl: 'https://www.canva.com/design/DAGNR1AKJM8/Y-MbDX1h0X_VA3vaJ9Fq-g/view?utm_source=linktree&utm_medium=share&utm_campaign=catalogo_compartido&utm_content=lamparas&utm_term=modal',
-  whatsappUrl: 'https://www.canva.com/design/DAGNR1AKJM8/Y-MbDX1h0X_VA3vaJ9Fq-g/view?utm_source=linktree&utm_medium=whatsapp&utm_campaign=catalogo_compartido&utm_content=lamparas&utm_term=modal',
-  copyUrl: 'https://www.canva.com/design/DAGNR1AKJM8/Y-MbDX1h0X_VA3vaJ9Fq-g/view?utm_source=linktree&utm_medium=copy&utm_campaign=catalogo_compartido&utm_content=lamparas&utm_term=modal',
-  openInNewTab: true
+function doPost(e) {
+  return handleRequest_(e);
+}
 
+function ensureSheetHasColumns_(sheet, neededColumns) {
+  const currentMax = sheet.getMaxColumns();
 
-      },
-      {
-        catalogo: 'mesas',
-        titulo: 'Mesas, Mobiliario, Sillas, .pdf',
-        img: 'https://tirssagallery.com/mesa-2/',
-        fallbackImg: 'https://tirssagallery.com/wp-content/uploads/2025/01/mesas.jpg',
-        target: 'https://canva.link/nuevaimportacion2026',
-        shareUrl: 'https://canva.link/nuevaimportacion2026?utm_source=linktree&utm_medium=share&utm_campaign=catalogo_compartido&utm_content=mesas&utm_term=modal',
-  whatsappUrl: 'https://canva.link/nuevaimportacion2026?utm_source=linktree&utm_medium=whatsapp&utm_campaign=catalogo_compartido&utm_content=mesas&utm_term=modal',
-  copyUrl: 'https://canva.link/nuevaimportacion2026?utm_source=linktree&utm_medium=copy&utm_campaign=catalogo_compartido&utm_content=mesas&utm_term=modal',
-  openInNewTab: true
+  if (currentMax >= neededColumns) return;
 
+  if (currentMax <= 0) {
+    sheet.insertColumns(1, neededColumns);
+    return;
+  }
 
+  sheet.insertColumnsAfter(currentMax, neededColumns - currentMax);
+}
 
-      },
-      {
-        catalogo: 'tapetes',
-        titulo: 'Tapetes, Cojines, Pouf.pdf',
-        img: 'https://tirssagallery.com/tapetes/',
-        fallbackImg: 'https://tirssagallery.com/wp-content/uploads/2025/01/tapetes.jpg',
-        target: 'https://canva.link/tapetes',
-        shareUrl: 'https://canva.link/tapetes?utm_source=linktree&utm_medium=share&utm_campaign=catalogo_compartido&utm_content=tapetes&utm_term=modal',
-  whatsappUrl: 'https://canva.link/tapetes?utm_source=linktree&utm_medium=whatsapp&utm_campaign=catalogo_compartido&utm_content=tapetes&utm_term=modal',
-  copyUrl: 'https://canva.link/tapetes?utm_source=linktree&utm_medium=copy&utm_campaign=catalogo_compartido&utm_content=tapetes&utm_term=modal',
-  openInNewTab: true
+function getColumnIndexByHeader_(header) {
+  const index = SHEET_HEADERS.indexOf(header);
+  return index === -1 ? 0 : index + 1;
+}
 
+function safeSetColumnWidth_(sheet, column, width) {
+  if (column > 0 && column <= SHEET_HEADERS.length) {
+    sheet.setColumnWidth(column, width);
+  }
+}
 
-      },
-      {
-        catalogo: 'pared',
-        titulo: 'Pared, Espejos, Cuadros, Apliques y mucho más.pdf',
-        img: 'https://tirssagallery.com/pared/',
-        fallbackImg: 'https://tirssagallery.com/wp-content/uploads/2025/01/pared.jpg',
-        target: 'https://www.canva.com/design/DAGeKPp4OcI/A9z_qxRdIKwtca0iKCxp3w/view',
-        shareUrl: 'https://www.canva.com/design/DAGeKPp4OcI/A9z_qxRdIKwtca0iKCxp3w/view?utm_source=linktree&utm_medium=share&utm_campaign=catalogo_compartido&utm_content=pared&utm_term=modal',
-  whatsappUrl: 'https://www.canva.com/design/DAGeKPp4OcI/A9z_qxRdIKwtca0iKCxp3w/view?utm_source=linktree&utm_medium=whatsapp&utm_campaign=catalogo_compartido&utm_content=pared&utm_term=modal',
-  copyUrl: 'https://www.canva.com/design/DAGeKPp4OcI/A9z_qxRdIKwtca0iKCxp3w/view?utm_source=linktree&utm_medium=copy&utm_campaign=catalogo_compartido&utm_content=pared&utm_term=modal',
-  openInNewTab: true
+function formatColumnsByHeaders_(sheet, headers, format) {
+  const maxRows = Math.max(sheet.getMaxRows() - 1, 1);
 
-      }
-    ];
+  headers.forEach(function (header) {
+    const col = getColumnIndexByHeader_(header);
+    if (!col) return;
 
-    const linksEl = document.getElementById('links');
-    const statusEl = document.getElementById('status');
-    const shareModal = document.getElementById('shareModal');
-    const shareBtn = document.getElementById('shareBtn');
-    const shareBottomBtn = document.getElementById('shareBottomBtn');
-    const closeModalBtn = document.getElementById('closeModalBtn');
-    const copyLinkBtn = document.getElementById('copyLinkBtn');
-    const copyLinkTopBtn = document.getElementById('copyLinkTopBtn');
-    const shareWhatsappBtn = document.getElementById('shareWhatsappBtn');
-    const shareUrlText = document.getElementById('shareUrlText');
-    const shareModalTitle = document.getElementById('shareModalTitle');
-    const previewImage = document.getElementById('previewImage');
-    const previewImageWrap = document.getElementById('previewImageWrap');
-    const previewTitle = document.getElementById('previewTitle');
-    const previewSubtitle = document.getElementById('previewSubtitle');
-    const copyTitle = document.getElementById('copyTitle');
-    const leadGate = document.getElementById('leadGate');
-    const leadPhoneForm = document.getElementById('leadPhoneForm');
-    const customerPhoneInput = document.getElementById('customerPhone');
-    const customerCountrySelect = document.getElementById('customerCountry');
-    const customerConsent = document.getElementById('customerConsent');
-    const leadSubmitBtn = document.getElementById('leadSubmitBtn');
-    const leadError = document.getElementById('leadError');
-
-    const PAGE_START_MS = Date.now();
-    let currentShareData = null;
-    let currentShareOrigin = null;
-    let currentShareCatalog = '';
-    let maxScrollPercent = 0;
-    let publicIp = storageGet('session', 'tirssa_public_ip') || '';
-    let publicIpPromise = null;
-
-
-    function normalizePhoneDigits(value) {
-      return String(value || '').replace(/\D/g, '');
+    try {
+      sheet.getRange(2, col, maxRows, 1).setNumberFormat(format);
+    } catch (err) {
+      Logger.log(err);
     }
+  });
+}
 
-    function getCountryMeta(countryCode) {
-      const code = String(countryCode || 'CO').toUpperCase();
-      if (code === 'MX') {
-        return { code: 'MX', dial: '52', name: 'Mexico' };
-      }
-      if (code === 'OTHER') {
-        return { code: '', dial: '', name: '' };
-      }
-      return { code: 'CO', dial: '57', name: 'Colombia' };
+function formatRowColumnsByHeaders_(sheet, rowIndex, headers, format) {
+  headers.forEach(function (header) {
+    const col = getColumnIndexByHeader_(header);
+    if (!col) return;
+
+    try {
+      sheet.getRange(rowIndex, col).setNumberFormat(format);
+    } catch (err) {
+      Logger.log(err);
     }
-
-    function normalizeWhatsappNumber(rawPhone, countryCode) {
-      let digits = normalizePhoneDigits(rawPhone);
-      const country = getCountryMeta(countryCode);
-
-      if (!digits) return '';
-
-      // Colombia: celular nacional de 10 dígitos inicia en 3
-      if (country.code === 'CO' && digits.length === 10 && digits.charAt(0) === '3') {
-        digits = country.dial + digits;
-      }
-
-      // México: número nacional de 10 dígitos
-      if (country.code === 'MX' && digits.length === 10) {
-        digits = country.dial + digits;
-      }
-
-      // Si el usuario escribió 0057 / 0052, convertir a formato internacional limpio
-      if (digits.indexOf('00') === 0) {
-        digits = digits.slice(2);
-      }
-
-      return digits;
-    }
-
-    function isValidWhatsappNumber(normalizedPhone, countryCode) {
-      const country = getCountryMeta(countryCode);
-      const digits = normalizePhoneDigits(normalizedPhone);
-
-      if (country.code === 'CO') {
-        return /^57[3]\d{9}$/.test(digits);
-      }
-
-      if (country.code === 'MX') {
-        return /^52\d{10}$/.test(digits);
-      }
-
-      return digits.length >= 8 && digits.length <= 15;
-    }
-
-    function getStoredCustomerData() {
-      return {
-        customer_phone: storageGet('local', 'tirssa_customer_phone') || storageGet('session', 'tirssa_customer_phone') || '',
-        customer_country: storageGet('local', 'tirssa_customer_country') || '',
-        customer_region: storageGet('local', 'tirssa_customer_region') || '',
-        customer_city: storageGet('local', 'tirssa_customer_city') || '',
-        lead_status: storageGet('local', 'tirssa_lead_status') || ''
-      };
-    }
-
-    function setStoredCustomerData(data) {
-      const safePhone = normalizePhoneDigits(data.customer_phone || '');
-      if (safePhone) {
-        storageSet('local', 'tirssa_customer_phone', safePhone);
-        storageSet('session', 'tirssa_customer_phone', safePhone);
-      }
-      storageSet('local', 'tirssa_customer_country', data.customer_country || '');
-      storageSet('local', 'tirssa_customer_region', data.customer_region || '');
-      storageSet('local', 'tirssa_customer_city', data.customer_city || '');
-      storageSet('local', 'tirssa_lead_status', data.lead_status || 'Telefono capturado');
-      storageSet('local', 'tirssa_phone_captured_at', new Date().toISOString());
-    }
-
-    function hasStoredCustomerPhone() {
-      return Boolean(normalizePhoneDigits(getStoredCustomerData().customer_phone));
-    }
-
-    function showCatalogsAfterLeadCapture() {
-      document.body.classList.remove('gate-active');
-      if (statusEl) statusEl.textContent = 'Selecciona un catálogo';
-    }
-
-    function showLeadGateIfNeeded() {
-      if (!CONFIG.REQUIRE_WHATSAPP_BEFORE_CATALOGS || hasStoredCustomerPhone()) {
-        showCatalogsAfterLeadCapture();
-      } else {
-        document.body.classList.add('gate-active');
-      }
-    }
-
-    async function handleLeadPhoneSubmit(event) {
-      event.preventDefault();
-
-      const countryMeta = getCountryMeta(customerCountrySelect.value);
-      const normalizedPhone = normalizeWhatsappNumber(customerPhoneInput.value, customerCountrySelect.value);
-
-      leadError.textContent = '';
-
-      if (!customerConsent.checked) {
-        leadError.textContent = 'Debe aceptar la autorización para continuar.';
-        return;
-      }
-
-      if (!isValidWhatsappNumber(normalizedPhone, customerCountrySelect.value)) {
-        leadError.textContent = 'Revise el número de WhatsApp. Ejemplo Colombia: 300 123 4567.';
-        return;
-      }
-
-      leadSubmitBtn.disabled = true;
-      leadSubmitBtn.textContent = 'Guardando...';
-
-      const customerData = {
-        customer_phone: normalizedPhone,
-        customer_country: countryMeta.code || countryMeta.name,
-        customer_region: '',
-        customer_city: '',
-        lead_status: 'Telefono capturado'
-      };
-
-      setStoredCustomerData(customerData);
-
-      await waitForPublicIp(1200);
-
-      trackEvent('whatsapp_capture', {
-        ...customerData,
-        event_source: 'whatsapp_gate',
-        intent_score: 8,
-        target: window.location.href || '',
-        target_domain: window.location.hostname || '',
-        catalogo: '',
-        value: '',
-        currency: 'COP'
-      });
-
-      setTimeout(() => {
-        showCatalogsAfterLeadCapture();
-        leadSubmitBtn.disabled = false;
-        leadSubmitBtn.textContent = 'Ir a catálogos';
-      }, 260);
-    }
-
-
-    function safeOpen(url) {
-      window.open(url, '_blank', 'noopener,noreferrer');
-    }
-
-    function uuid() {
-      if (window.crypto && crypto.randomUUID) {
-        return crypto.randomUUID();
-      }
-      return `evt-${Date.now()}-${Math.random().toString(36).slice(2, 10)}`;
-    }
-
-    function storageGet(type, key) {
-      try {
-        return (type === 'session' ? sessionStorage : localStorage).getItem(key) || '';
-      } catch (error) {
-        return '';
-      }
-    }
-
-    function storageSet(type, key, value) {
-      try {
-        (type === 'session' ? sessionStorage : localStorage).setItem(key, value);
-      } catch (error) {
-        console.warn('No se pudo guardar en storage:', error);
-      }
-    }
-
-    function getStoredPublicIp() {
-      return publicIp || storageGet('session', 'tirssa_public_ip') || '';
-    }
-
-    function setStoredPublicIp(ip) {
-      const safeIp = String(ip || '').trim();
-      if (!safeIp) return '';
-      publicIp = safeIp;
-      storageSet('session', 'tirssa_public_ip', safeIp);
-      return safeIp;
-    }
-
-    function fetchPublicIp(force = false) {
-      if (!force) {
-        const cached = getStoredPublicIp();
-        if (cached) return Promise.resolve(cached);
-      }
-
-      if (!force && publicIpPromise) {
-        return publicIpPromise;
-      }
-
-      publicIpPromise = fetch('https://api.ipify.org?format=json', { cache: 'no-store' })
-        .then((response) => {
-          if (!response.ok) throw new Error(`IP status ${response.status}`);
-          return response.json();
-        })
-        .then((data) => setStoredPublicIp(data && data.ip ? data.ip : ''))
-        .catch((error) => {
-          console.warn('IP fetch error:', error);
-          return getStoredPublicIp();
-        })
-        .finally(() => {
-          publicIpPromise = null;
-        });
-
-      return publicIpPromise;
-    }
-
-    function waitForPublicIp(maxMs = 900) {
-      return Promise.race([
-        fetchPublicIp(),
-        new Promise((resolve) => {
-          setTimeout(() => resolve(getStoredPublicIp()), maxMs);
-        })
-      ]);
-    }
-
-    function getSessionId() {
-      const storageKey = 'tirssa_linktree_session_id';
-      let currentId = storageGet('session', storageKey);
-
-      if (!currentId) {
-        currentId = `SID-${Math.random().toString(36).slice(2, 10).toUpperCase()}-${Date.now().toString(36).toUpperCase()}`;
-        storageSet('session', storageKey, currentId);
-      }
-
-      return currentId;
-    }
-
-    function getVisitorId() {
-      const storageKey = 'tirssa_linktree_visitor_id';
-      let currentId = storageGet('local', storageKey);
-
-      if (!currentId) {
-        currentId = `VID-${Math.random().toString(36).slice(2, 10).toUpperCase()}-${Date.now().toString(36).toUpperCase()}`;
-        storageSet('local', storageKey, currentId);
-      }
-
-      return currentId;
-    }
-
-    function getSecondsToClick() {
-      return Number(((Date.now() - PAGE_START_MS) / 1000).toFixed(1));
-    }
-
-    function getDeviceType() {
-      const ua = navigator.userAgent || '';
-      const isTablet =
-        /tablet|ipad|playbook|silk/i.test(ua) ||
-        (/android/i.test(ua) && !/mobile/i.test(ua)) ||
-        (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
-      const isMobile = /mobi|iphone|ipod|android.*mobile|windows phone/i.test(ua);
-
-      if (isTablet) return 'tablet';
-      if (isMobile) return 'mobile';
-      return 'desktop';
-    }
-
-    function getOS() {
-      const ua = navigator.userAgent || '';
-      const platform = navigator.platform || '';
-
-      if (/windows/i.test(ua) || /Win/i.test(platform)) return 'Windows';
-      if (/android/i.test(ua)) return 'Android';
-      if (/iPad|iPhone|iPod/i.test(ua)) return 'iOS';
-      if (/Mac OS X/i.test(ua) || /Mac/i.test(platform)) return 'macOS';
-      if (/Linux/i.test(ua) || /Linux/i.test(platform)) return 'Linux';
-      return 'Unknown';
-    }
-
-    function getBrowser() {
-      const ua = navigator.userAgent || '';
-
-      if (/Edg\//i.test(ua)) return 'Edge';
-      if (/OPR\//i.test(ua) || /Opera/i.test(ua)) return 'Opera';
-      if (/SamsungBrowser/i.test(ua)) return 'Samsung Browser';
-      if (/Chrome\//i.test(ua) && !/Edg\//i.test(ua) && !/OPR\//i.test(ua)) return 'Chrome';
-      if (/Firefox\//i.test(ua)) return 'Firefox';
-      if (/Safari\//i.test(ua) && !/Chrome\//i.test(ua)) return 'Safari';
-      return 'Unknown';
-    }
-
-    function getResolution() {
-      const width = window.innerWidth || screen.width || '';
-      const height = window.innerHeight || screen.height || '';
-      return `${width}x${height}`;
-    }
-
-    function getLanguage() {
-      return navigator.language || navigator.userLanguage || '';
-    }
-
-    function getTimezone() {
-      try {
-        return Intl.DateTimeFormat().resolvedOptions().timeZone || '';
-      } catch (error) {
-        return '';
-      }
-    }
-
-    function getReferrer() {
-      return document.referrer || '';
-    }
-
-    function getQueryParam(name, url) {
-      try {
-        const params = new URL(url || window.location.href).searchParams;
-        return params.get(name) || '';
-      } catch (error) {
-        return '';
-      }
-    }
-
-    function extractAttributionFromUrl(url) {
-      try {
-        const parsed = new URL(url, window.location.href);
-        const params = parsed.searchParams;
-        return {
-          utm_source: params.get('utm_source') || '',
-          utm_medium: params.get('utm_medium') || '',
-          utm_campaign: params.get('utm_campaign') || '',
-          utm_content: params.get('utm_content') || '',
-          utm_term: params.get('utm_term') || '',
-          fbclid: params.get('fbclid') || ''
-        };
-      } catch (error) {
-        return {
-          utm_source: '',
-          utm_medium: '',
-          utm_campaign: '',
-          utm_content: '',
-          utm_term: '',
-          fbclid: ''
-        };
-      }
-    }
-
-    function getUTMParams() {
-      return extractAttributionFromUrl(window.location.href);
-    }
-
-    function getCookie(name) {
-      const match = document.cookie.match(new RegExp(`(^| )${name}=([^;]+)`));
-      return match ? decodeURIComponent(match[2]) : '';
-    }
-
-    function setCookie(name, value, days) {
-      const maxAge = days ? `; max-age=${days * 24 * 60 * 60}` : '';
-      document.cookie = `${name}=${encodeURIComponent(value)}; path=/; samesite=lax${maxAge}`;
-    }
-
-    function getOrCreateFbp() {
-      const existing = getCookie('_fbp');
-      if (existing) return existing;
-      const generated = `fb.1.${Date.now()}.${Math.floor(Math.random() * 1000000000)}`;
-      setCookie('_fbp', generated, 90);
-      return generated;
-    }
-
-    function getFbc() {
-      const existing = getCookie('_fbc');
-      if (existing) return existing;
-      const fbclid = getQueryParam('fbclid');
-      if (!fbclid) return '';
-      const generated = `fb.1.${Math.floor(Date.now() / 1000)}.${fbclid}`;
-      setCookie('_fbc', generated, 90);
-      return generated;
-    }
-
-    function persistFirstTouch() {
-      if (!storageGet('local', 'tirssa_first_landing_url')) {
-        const utm = getUTMParams();
-        storageSet('local', 'tirssa_first_landing_url', window.location.href || '');
-        storageSet('local', 'tirssa_first_referrer', getReferrer());
-        storageSet('local', 'tirssa_first_utm_source', utm.utm_source);
-        storageSet('local', 'tirssa_first_utm_medium', utm.utm_medium);
-        storageSet('local', 'tirssa_first_utm_campaign', utm.utm_campaign);
-        storageSet('local', 'tirssa_first_utm_content', utm.utm_content);
-        storageSet('local', 'tirssa_first_utm_term', utm.utm_term);
-      }
-    }
-
-    function getClickCountSession() {
-      return Number(storageGet('session', 'tirssa_click_count_session') || 0);
-    }
-
-    function incrementClickCountSession() {
-      const next = getClickCountSession() + 1;
-      storageSet('session', 'tirssa_click_count_session', String(next));
-      return next;
-    }
-
-    function getCatalogsViewedSession() {
-      return Number(storageGet('session', 'tirssa_catalogs_viewed_session') || 0);
-    }
-
-    function incrementCatalogsViewedSession() {
-      const next = getCatalogsViewedSession() + 1;
-      storageSet('session', 'tirssa_catalogs_viewed_session', String(next));
-      return next;
-    }
-
-    function isReturningUser() {
-      const existing = storageGet('local', 'tirssa_first_seen_at');
-      if (existing) return true;
-      storageSet('local', 'tirssa_first_seen_at', new Date().toISOString());
-      return false;
-    }
-
-    function getLocalDayOfWeek() {
-      return new Date().toLocaleDateString('es-CO', { weekday: 'long' });
-    }
-
-    function getTargetDomain(target) {
-      try {
-        return target ? new URL(target, window.location.href).hostname : '';
-      } catch (error) {
-        return '';
-      }
-    }
-
-    function appendParamsToUrl(url, params) {
-      if (!url) return '';
-      try {
-        const parsed = new URL(url, window.location.href);
-        Object.entries(params || {}).forEach(([key, value]) => {
-          if (value !== null && value !== undefined && String(value) !== '') {
-            parsed.searchParams.set(key, String(value));
-          }
-        });
-        return parsed.toString();
-      } catch (error) {
-        return url;
-      }
-    }
-
-    function buildCatalogTrackedUrl(item, medium, term) {
-      const defaults = {
-        utm_source: 'linktree',
-        utm_medium: medium,
-        utm_campaign: 'catalogo_compartido',
-        utm_content: item.catalogo,
-        utm_term: term || 'modal'
-      };
-      const baseTarget = item.target || '';
-      const explicit =
-        medium === 'share' ? item.shareUrl :
-        medium === 'whatsapp' ? item.whatsappUrl :
-        medium === 'copy' ? item.copyUrl :
-        medium === 'click' ? item.clickUrl :
-        '';
-      return appendParamsToUrl(explicit || baseTarget, defaults);
-    }
-
-    function getIntentScore(eventName, extras) {
-      let score = 0;
-      if (eventName === 'page_view') score = 1;
-      if (eventName === 'catalog_click') score = 2;
-      if (eventName === 'share_open') score = 3;
-      if (eventName === 'copy_link') score = 4;
-      if (eventName === 'share_whatsapp') score = 5;
-      if (eventName === 'join_channel') score = 6;
-      if (eventName === 'return_visit') score = 7;
-      if (eventName === 'whatsapp_capture') score = 8;
-
-      if (eventName === 'catalog_click' && Number(extras.catalogs_viewed_session || 0) >= 2) score += 2;
-      if (Number(extras.scroll_percent || 0) >= 50) score += 1;
-      if (Number(extras.engaged_seconds || 0) >= 15) score += 1;
-      return score;
-    }
-
-    function buildTrackingPayload(eventName, overrides) {
-      const pageUtm = getUTMParams();
-      const targetUtm = extractAttributionFromUrl((overrides && overrides.target) || '');
-      const customerData = getStoredCustomerData();
-      const returningUser = isReturningUser();
-      const mergedUtm = {
-        utm_source: targetUtm.utm_source || pageUtm.utm_source,
-        utm_medium: targetUtm.utm_medium || pageUtm.utm_medium,
-        utm_campaign: targetUtm.utm_campaign || pageUtm.utm_campaign,
-        utm_content: targetUtm.utm_content || pageUtm.utm_content,
-        utm_term: targetUtm.utm_term || pageUtm.utm_term,
-        fbclid: targetUtm.fbclid || pageUtm.fbclid
-      };
-
-      const base = Object.assign(
-        {
-          catalogo: '',
-          src: CONFIG.SRC || '',
-          campaign: mergedUtm.utm_campaign || CONFIG.CAMPAIGN || '',
-          target: '',
-          device: getDeviceType(),
-          os: getOS(),
-          browser: getBrowser(),
-          resolution: getResolution(),
-          lang: getLanguage(),
-          timezone: getTimezone(),
-          referrer: getReferrer(),
-          session_id: getSessionId(),
-          seconds_to_click: getSecondsToClick(),
-          utm_source: mergedUtm.utm_source,
-          utm_medium: mergedUtm.utm_medium,
-          utm_campaign: mergedUtm.utm_campaign,
-          utm_content: mergedUtm.utm_content,
-          utm_term: mergedUtm.utm_term,
-          ua: navigator.userAgent || '',
-          page: window.location.href || '',
-          visitor_id: getVisitorId(),
-          event_name: eventName,
-          event_id: uuid(),
-          event_source: 'linktree',
-          ip: getStoredPublicIp(),
-          first_landing_url: storageGet('local', 'tirssa_first_landing_url'),
-          first_referrer: storageGet('local', 'tirssa_first_referrer'),
-          first_utm_source: storageGet('local', 'tirssa_first_utm_source'),
-          first_utm_medium: storageGet('local', 'tirssa_first_utm_medium'),
-          first_utm_campaign: storageGet('local', 'tirssa_first_utm_campaign'),
-          first_utm_content: storageGet('local', 'tirssa_first_utm_content'),
-          first_utm_term: storageGet('local', 'tirssa_first_utm_term'),
-          last_utm_source: mergedUtm.utm_source,
-          last_utm_medium: mergedUtm.utm_medium,
-          last_utm_campaign: mergedUtm.utm_campaign,
-          last_utm_content: mergedUtm.utm_content,
-          last_utm_term: mergedUtm.utm_term,
-          fbclid: mergedUtm.fbclid,
-          fbp: getOrCreateFbp(),
-          fbc: getFbc(),
-          engaged_seconds: getSecondsToClick(),
-          scroll_percent: maxScrollPercent,
-          catalog_position: '',
-          target_domain: '',
-          click_count_session: getClickCountSession(),
-          catalogs_viewed_session: getCatalogsViewedSession(),
-          returning_user: returningUser ? 'true' : 'false',
-          local_hour: new Date().getHours(),
-          local_day_of_week: getLocalDayOfWeek(),
-          intent_score: 0,
-          customer_phone: customerData.customer_phone || '',
-          customer_country: customerData.customer_country || '',
-          customer_city: customerData.customer_city || '',
-          customer_region: customerData.customer_region || '',
-          lead_status: customerData.lead_status || '',
-          currency: 'COP',
-          value: ''
-        },
-        overrides || {}
-      );
-
-      const finalTargetUtm = extractAttributionFromUrl(base.target || '');
-      base.utm_source = base.utm_source || finalTargetUtm.utm_source;
-      base.utm_medium = base.utm_medium || finalTargetUtm.utm_medium;
-      base.utm_campaign = base.utm_campaign || finalTargetUtm.utm_campaign;
-      base.utm_content = base.utm_content || finalTargetUtm.utm_content;
-      base.utm_term = base.utm_term || finalTargetUtm.utm_term;
-      base.last_utm_source = base.last_utm_source || base.utm_source;
-      base.last_utm_medium = base.last_utm_medium || base.utm_medium;
-      base.last_utm_campaign = base.last_utm_campaign || base.utm_campaign;
-      base.last_utm_content = base.last_utm_content || base.utm_content;
-      base.last_utm_term = base.last_utm_term || base.utm_term;
-      base.fbclid = base.fbclid || finalTargetUtm.fbclid;
-      base.intent_score = getIntentScore(eventName, base);
-      return base;
-    }
-
-    function sendTracking(payload) {
-      const bodyStr = JSON.stringify(payload);
-
-      try {
-        if (navigator.sendBeacon) {
-          const blob = new Blob([bodyStr], { type: 'text/plain;charset=UTF-8' });
-          const ok = navigator.sendBeacon(CONFIG.TRACKING_URL, blob);
-          if (ok) return true;
-        }
-      } catch (error) {
-        console.warn('sendBeacon error:', error);
-      }
-
-      try {
-        fetch(CONFIG.TRACKING_URL, {
-          method: 'POST',
-          body: bodyStr,
-          headers: { 'Content-Type': 'application/json' },
-          keepalive: true,
-          mode: 'no-cors'
-        }).catch((error) => console.warn('Fallback fetch error:', error));
-        return true;
-      } catch (error) {
-        console.warn('fetch tracking error:', error);
-      }
-
-      try {
-        const url = new URL(CONFIG.TRACKING_URL);
-        Object.keys(payload).forEach((key) => {
-          const value = payload[key];
-          if (value !== null && value !== undefined && String(value) !== '') {
-            url.searchParams.set(key, value);
-          }
-        });
-        const img = new Image();
-        img.src = url.toString();
-        return true;
-      } catch (error) {
-        console.warn('image fallback error:', error);
-      }
-
-      return false;
-    }
-
-    function trackEvent(eventName, overrides = {}) {
-  const payload = buildTrackingPayload(eventName, {
-    ...overrides,
-    ip: overrides.ip || getStoredPublicIp()
+  });
+}
+
+function ensureHeaders_(sheet) {
+  ensureSheetHasColumns_(sheet, SHEET_HEADERS.length);
+
+  const currentHeaders =
+    sheet.getLastColumn() > 0
+      ? sheet.getRange(1, 1, 1, Math.max(sheet.getLastColumn(), SHEET_HEADERS.length)).getValues()[0]
+      : [];
+
+  const needsRewrite = SHEET_HEADERS.some(function (header, index) {
+    return String(currentHeaders[index] || '').trim() !== header;
   });
 
-  sendTracking(payload);
+  if (needsRewrite) {
+    sheet.getRange(1, 1, 1, SHEET_HEADERS.length).setValues([SHEET_HEADERS]);
+  }
+}
+
+function formatTrackingSheet_(sheet) {
+  ensureSheetHasColumns_(sheet, SHEET_HEADERS.length);
+
+  sheet.setFrozenRows(1);
+
+  sheet
+    .getRange(1, 1, 1, SHEET_HEADERS.length)
+    .setFontWeight('bold')
+    .setBackground('#0F172A')
+    .setFontColor('#FFFFFF')
+    .setHorizontalAlignment('center');
+
+  safeSetColumnWidth_(sheet, getColumnIndexByHeader_('Fecha'), 160);
+
+  for (let i = 2; i <= SHEET_HEADERS.length; i += 1) {
+    safeSetColumnWidth_(sheet, i, 140);
+  }
+
+  safeSetColumnWidth_(sheet, getColumnIndexByHeader_('PageURL'), 220);
+  safeSetColumnWidth_(sheet, getColumnIndexByHeader_('UserAgent'), 220);
+  safeSetColumnWidth_(sheet, getColumnIndexByHeader_('MetaResponse'), 220);
+
+  formatColumnsByHeaders_(
+    sheet,
+    [
+      'SecondsToClick',
+      'EngagedSeconds',
+      'ScrollPercent',
+      'ClickCountSession',
+      'CatalogsViewedSession',
+      'LocalHour',
+      'IntentScore',
+      'Value'
+    ],
+    '0.0'
+  );
+
+  formatColumnsByHeaders_(
+    sheet,
+    ['IP_Latitude', 'IP_Longitude'],
+    '0.000000'
+  );
+
+  formatColumnsByHeaders_(sheet, ['Fecha', 'MetaSentAt'], 'dd/MM/yyyy HH:mm:ss');
+}
+
+function applyRowFormatting_(sheet, rowIndex) {
+  formatRowColumnsByHeaders_(sheet, rowIndex, ['Fecha', 'MetaSentAt'], 'dd/MM/yyyy HH:mm:ss');
+
+  formatRowColumnsByHeaders_(
+    sheet,
+    rowIndex,
+    [
+      'SecondsToClick',
+      'EngagedSeconds',
+      'ScrollPercent',
+      'ClickCountSession',
+      'CatalogsViewedSession',
+      'LocalHour',
+      'IntentScore',
+      'Value'
+    ],
+    '0.0'
+  );
+
+  formatRowColumnsByHeaders_(
+    sheet,
+    rowIndex,
+    ['IP_Latitude', 'IP_Longitude'],
+    '0.000000'
+  );
+}
+
+function isDuplicateEvent_(sheet, eventId, eventName) {
+  if (!eventId) return false;
+
+  const lastRow = sheet.getLastRow();
+  if (lastRow < 2) return false;
+
+  const eventIdColumn = getColumnIndexByHeader_('EventID');
+  const eventNameColumn = getColumnIndexByHeader_('EventName');
+
+  const idValues = sheet.getRange(2, eventIdColumn, lastRow - 1, 1).getValues();
+  const nameValues = sheet.getRange(2, eventNameColumn, lastRow - 1, 1).getValues();
+
+  const targetId = String(eventId).trim();
+  const targetName = String(eventName || '').trim();
+
+  for (let i = 0; i < idValues.length; i += 1) {
+    const currentId = String(idValues[i][0] || '').trim();
+    const currentName = String(nameValues[i][0] || '').trim();
+
+    if (currentId === targetId && currentName === targetName) {
+      return true;
+    }
+  }
+
+  return false;
+}
+
+function handleRequest_(e) {
+  const lock = LockService.getScriptLock();
+
+  try {
+    lock.waitLock(30000);
+
+    const ss = SpreadsheetApp.openById(SHEET_ID);
+    const sheet = ss.getSheetByName(SHEET_NAME) || ss.insertSheet(SHEET_NAME);
+
+    ensureHeaders_(sheet);
+
+    const incoming = parseIncoming_(e);
+    const payload = normalizePayload_(incoming);
+
+    if (payload.event_id && isDuplicateEvent_(sheet, payload.event_id, payload.event_name)) {
+      return jsonOutput_({
+        ok: true,
+        duplicate: true,
+        message: 'Evento duplicado omitido',
+        event_name: payload.event_name,
+        event_id: payload.event_id
+      });
+    }
+
+    if (payload.ip) {
+      Object.assign(payload, enrichIpData_(payload.ip));
+    }
+
+    const metaResult = {
+      sent: 'NO',
+      response: 'Pendiente de envío manual',
+      eventName: inferManualMetaEvent_(payload),
+      eventId: payload.event_id,
+      actionSource: 'website'
+    };
+
+    if (META_CONFIG.AUTO_SEND_CAPI) {
+      const autoResult = sendEventToMeta_(payload, metaResult.eventName);
+      metaResult.sent = autoResult.sent;
+      metaResult.response = autoResult.response;
+      metaResult.eventName = autoResult.eventName;
+      metaResult.eventId = autoResult.eventId;
+      metaResult.actionSource = autoResult.actionSource;
+    }
+
+    const row = buildRowFromPayload_(payload, metaResult);
+    sheet.appendRow(row);
+
+    const lastRow = sheet.getLastRow();
+    applyRowFormatting_(sheet, lastRow);
+
+    let leadResult = null;
+    try {
+      leadResult = updateLeadFromPayload_(ss, payload);
+    } catch (leadErr) {
+      Logger.log('updateLeadFromPayload_ error: ' + leadErr);
+      leadResult = {
+        ok: false,
+        error: String(leadErr)
+      };
+    }
+
+    return jsonOutput_({
+      ok: true,
+      message: 'Registro guardado correctamente',
+      event_name: payload.event_name,
+      event_id: payload.event_id,
+      sent_to_meta: metaResult.sent,
+      meta_event_name: metaResult.eventName,
+      lead_result: leadResult
+    });
+  } catch (err) {
+    return jsonOutput_({
+      ok: false,
+      error: String(err)
+    });
+  } finally {
+    try {
+      lock.releaseLock();
+    } catch (error) {
+      Logger.log(error);
+    }
+  }
+}
+
+function sendPendingRowsToMeta() {
+  const ss = SpreadsheetApp.openById(SHEET_ID);
+  const sheet = ss.getSheetByName(SHEET_NAME) || ss.insertSheet(SHEET_NAME);
+
+  ensureHeaders_(sheet);
+
+  const values = sheet.getDataRange().getValues();
+  if (values.length < 2) {
+    SpreadsheetApp.getUi().alert('No hay filas para enviar.');
+    return;
+  }
+
+  const headers = values[0];
+  const idx = indexMap_(headers);
+  const pendingRows = [];
+
+  for (let i = 1; i < values.length; i += 1) {
+    const sent = cleanText_(values[i][idx.SentToMeta]);
+    if (!sent || sent === 'no' || sent === 'error' || sent === 'pendiente') {
+      pendingRows.push({
+        rowNumber: i + 1,
+        row: values[i]
+      });
+    }
+  }
+
+  if (!pendingRows.length) {
+    SpreadsheetApp.getUi().alert('No hay filas pendientes de envío a Meta 🎉');
+    return;
+  }
+
+  const totalToProcess = Math.min(pendingRows.length, META_CONFIG.MAX_ROWS_PER_MANUAL_SEND);
+  let okCount = 0;
+  let errorCount = 0;
+
+  for (let i = 0; i < totalToProcess; i += 1) {
+    const item = pendingRows[i];
+    const rowMap = rowToObject_(headers, item.row);
+    const payload = normalizeRowObjectForMeta_(rowMap, item.row, idx, sheet, item.rowNumber);
+    const metaEventName = inferManualMetaEvent_(payload);
+    const result = sendEventToMeta_(payload, metaEventName);
+
+    if (result.sent === 'SI') okCount += 1;
+    else errorCount += 1;
+
+    updateMetaColumns_(sheet, item.rowNumber, idx, payload, result);
+  }
+
+  const remaining = pendingRows.length - totalToProcess;
+
+  SpreadsheetApp.getUi().alert(
+    'Proceso terminado.\n\n' +
+      'Enviadas OK: ' + okCount + '\n' +
+      'Con error: ' + errorCount + '\n' +
+      (remaining > 0 ? 'Pendientes por límite de lote: ' + remaining : 'Sin pendientes adicionales')
+  );
+}
+
+function parseIncoming_(e) {
+  const out = {};
+
+  try {
+    if (e && e.postData && e.postData.contents) {
+      const contents = e.postData.contents;
+      const type = String(e.postData.type || '').toLowerCase();
+
+      if (type.indexOf('application/json') > -1 || looksLikeJson_(contents)) {
+        Object.assign(out, JSON.parse(contents));
+      } else {
+        Object.assign(out, parseQueryString_(contents));
+      }
+    }
+
+    if (e && e.parameter) {
+      Object.keys(e.parameter).forEach(function (key) {
+        if (typeof out[key] === 'undefined' || out[key] === '') {
+          out[key] = e.parameter[key];
+        }
+      });
+    }
+  } catch (err) {
+    Logger.log('parseIncoming_ error: ' + err);
+  }
+
+  return out;
+}
+
+function looksLikeJson_(text) {
+  const value = String(text || '').trim();
+  return value.indexOf('{') === 0 || value.indexOf('[') === 0;
+}
+
+function parseQueryString_(qs) {
+  const obj = {};
+  if (!qs) return obj;
+
+  String(qs).split('&').forEach(function (pair) {
+    if (!pair) return;
+
+    const idx = pair.indexOf('=');
+    if (idx === -1) {
+      obj[decodeURIComponent(pair)] = '';
+      return;
+    }
+
+    const key = decodeURIComponent(pair.slice(0, idx).replace(/\+/g, ' '));
+    const value = decodeURIComponent(pair.slice(idx + 1).replace(/\+/g, ' '));
+    obj[key] = value;
+  });
+
+  return obj;
+}
+
+function extractAttributionFromUrl_(url) {
+  const empty = {
+    utm_source: '',
+    utm_medium: '',
+    utm_campaign: '',
+    utm_content: '',
+    utm_term: '',
+    fbclid: ''
+  };
+
+  if (!url) return empty;
+
+  try {
+    const match = String(url).match(/^[^?]+\?(.*)$/);
+    if (!match) return empty;
+    const params = parseQueryString_(match[1]);
+
+    return {
+      utm_source: value_(params.utm_source),
+      utm_medium: value_(params.utm_medium),
+      utm_campaign: value_(params.utm_campaign),
+      utm_content: value_(params.utm_content),
+      utm_term: value_(params.utm_term),
+      fbclid: value_(params.fbclid)
+    };
+  } catch (err) {
+    return empty;
+  }
+}
+
+function fallbackValue_() {
+  for (let i = 0; i < arguments.length; i += 1) {
+    const value = arguments[i];
+    if (String(value == null ? '' : value).trim() !== '') {
+      return String(value).trim();
+    }
+  }
+  return '';
+}
+
+function normalizeCoordinate_(value, fallback) {
+  if (value === null || value === '' || typeof value === 'undefined') {
+    return typeof fallback === 'undefined' ? '' : fallback;
+  }
+
+  if (typeof value === 'number') {
+    return isNaN(value) ? (typeof fallback === 'undefined' ? '' : fallback) : value;
+  }
+
+  let text = String(value).trim();
+
+  if (!text) {
+    return typeof fallback === 'undefined' ? '' : fallback;
+  }
+
+  // Corrige miles y decimales mixtos
+  if (text.indexOf(',') > -1 && text.indexOf('.') > -1) {
+    text = text.replace(/\./g, '').replace(',', '.');
+  } else if (text.indexOf(',') > -1 && text.indexOf('.') === -1) {
+    text = text.replace(',', '.');
+  }
+
+  const parsed = Number(text);
+
+  if (isNaN(parsed)) {
+    return typeof fallback === 'undefined' ? '' : fallback;
+  }
+
+  return parsed;
+}
+
+function coordinateLooksValid_(value, min, max) {
+  const num = normalizeCoordinate_(value, '');
+  if (num === '') return false;
+  return num >= min && num <= max;
+}
+
+function normalizePayload_(p) {
+  const now = new Date();
+  const target = value_(p.target) || value_(p.destination) || '';
+  const page = value_(p.page) || value_(p.page_url) || '';
+  const firstLanding = value_(p.first_landing_url) || page;
+
+  const targetAttr = extractAttributionFromUrl_(target);
+  const pageAttr = extractAttributionFromUrl_(page);
+  const firstAttr = extractAttributionFromUrl_(firstLanding);
+
+  const utmSource = fallbackValue_(p.utm_source, p.last_utm_source, targetAttr.utm_source, pageAttr.utm_source);
+  const utmMedium = fallbackValue_(p.utm_medium, p.last_utm_medium, targetAttr.utm_medium, pageAttr.utm_medium);
+  const utmCampaign = fallbackValue_(p.utm_campaign, p.last_utm_campaign, targetAttr.utm_campaign, pageAttr.utm_campaign);
+  const utmContent = fallbackValue_(p.utm_content, p.last_utm_content, targetAttr.utm_content, pageAttr.utm_content);
+  const utmTerm = fallbackValue_(p.utm_term, p.last_utm_term, targetAttr.utm_term, pageAttr.utm_term);
+
+  const eventName = value_(p.event_name) || (value_(p.catalogo) ? 'catalog_click' : 'page_view');
+  const eventId = value_(p.event_id) || generateId_('evt');
+  const sessionId = value_(p.session_id) || generateId_('sid');
+  const visitorId = value_(p.visitor_id) || sessionId;
+
+  const normalized = {
+    fecha: now,
+    catalogo: value_(p.catalogo),
+    fuente: value_(p.src) || value_(p.source),
+    campana: fallbackValue_(p.campaign, utmCampaign),
+    destino: target,
+    dispositivo: value_(p.device),
+    so: value_(p.os),
+    navegador: value_(p.browser),
+    resolucion: value_(p.resolution),
+    idioma: value_(p.lang) || value_(p.language),
+    timezone: value_(p.timezone),
+    referer: value_(p.referrer) || value_(p.referer),
+    session_id: sessionId,
+    seconds_to_click: num_(p.seconds_to_click),
+    utm_source: utmSource,
+    utm_medium: utmMedium,
+    utm_campaign: utmCampaign,
+    utm_content: utmContent,
+    utm_term: utmTerm,
+    ua: value_(p.ua) || value_(p.user_agent),
+    page: page,
+
+    visitor_id: visitorId,
+    event_name: eventName,
+    event_id: eventId,
+    event_source: value_(p.event_source) || 'linktree',
+
+    first_landing_url: firstLanding,
+    first_referrer: fallbackValue_(p.first_referrer, p.referrer, ''),
+    first_utm_source: fallbackValue_(p.first_utm_source, firstAttr.utm_source, utmSource),
+    first_utm_medium: fallbackValue_(p.first_utm_medium, firstAttr.utm_medium, utmMedium),
+    first_utm_campaign: fallbackValue_(p.first_utm_campaign, firstAttr.utm_campaign, utmCampaign),
+    first_utm_content: fallbackValue_(p.first_utm_content, firstAttr.utm_content, utmContent),
+    first_utm_term: fallbackValue_(p.first_utm_term, firstAttr.utm_term, utmTerm),
+
+    last_utm_source: fallbackValue_(p.last_utm_source, targetAttr.utm_source, utmSource),
+    last_utm_medium: fallbackValue_(p.last_utm_medium, targetAttr.utm_medium, utmMedium),
+    last_utm_campaign: fallbackValue_(p.last_utm_campaign, targetAttr.utm_campaign, utmCampaign),
+    last_utm_content: fallbackValue_(p.last_utm_content, targetAttr.utm_content, utmContent),
+    last_utm_term: fallbackValue_(p.last_utm_term, targetAttr.utm_term, utmTerm),
+
+    fbclid: fallbackValue_(p.fbclid, targetAttr.fbclid, pageAttr.fbclid, firstAttr.fbclid),
+    fbp: value_(p.fbp),
+    fbc: value_(p.fbc),
+    engaged_seconds: num_(p.engaged_seconds, num_(p.seconds_to_click)),
+    scroll_percent: num_(p.scroll_percent),
+    catalog_position: value_(p.catalog_position),
+    target_domain: value_(p.target_domain) || getDomain_(target),
+    click_count_session: num_(p.click_count_session),
+    catalogs_viewed_session: num_(p.catalogs_viewed_session),
+    returning_user: value_(p.returning_user),
+    local_hour: value_(p.local_hour),
+    local_day_of_week: value_(p.local_day_of_week),
+    intent_score: num_(p.intent_score),
+    ip: fallbackValue_(p.ip, p.client_ip_address, p.clientIp, p.client_ip),
+    external_id: value_(p.external_id) || visitorId,
+    currency: value_(p.currency) || 'COP',
+    value: num_(p.value),
+
+    customer_email: value_(p.customer_email || p.CustomerEmail),
+    customer_phone: value_(p.customer_phone || p.CustomerPhone),
+    customer_first_name: value_(p.customer_first_name || p.CustomerFirstName),
+    customer_last_name: value_(p.customer_last_name || p.CustomerLastName),
+    customer_city: value_(p.customer_city || p.CustomerCity),
+    customer_region: value_(p.customer_region || p.CustomerRegion),
+    customer_country: value_(p.customer_country || p.CustomerCountry),
+    lead_status: value_(p.lead_status || p.LeadStatus),
+    order_id: value_(p.order_id),
+
+    ip_city: '',
+    ip_region: '',
+    ip_region_code: '',
+    ip_country_name: '',
+    ip_country_code: '',
+    ip_postal: '',
+    ip_latitude: '',
+    ip_longitude: '',
+    ip_lookup_timezone: '',
+    ip_org: '',
+    ip_asn: ''
+  };
+
+  if (normalized.intent_score === '') {
+    normalized.intent_score = inferIntentScore_(normalized);
+  }
+
+  if (!normalized.local_hour && normalized.local_hour !== 0) {
+    normalized.local_hour = now.getHours();
+  }
+
+  if (!normalized.local_day_of_week) {
+    normalized.local_day_of_week = Utilities.formatDate(now, Session.getScriptTimeZone(), 'EEEE');
+  }
+
+  if (normalized.seconds_to_click === '') {
+    normalized.seconds_to_click = normalized.engaged_seconds || 0;
+  }
+
+  return normalized;
+}
+
+function enrichIpData_(ip) {
+  const cleanIp = String(ip || '').trim();
+  if (!IP_GEO_CONFIG.ENABLED || !cleanIp) {
+    return {};
+  }
+
+  const cache = CacheService.getScriptCache();
+  const cacheKey = 'ip-api:' + IP_GEO_CONFIG.CACHE_VERSION + ':' + cleanIp;
+
+  try {
+    const cached = cache.get(cacheKey);
+    if (cached) {
+      return JSON.parse(cached);
+    }
+  } catch (err) {
+    Logger.log('ip-api cache read error: ' + err);
+  }
+
+  try {
+    const fields = [
+      'status',
+      'message',
+      'country',
+      'countryCode',
+      'region',
+      'regionName',
+      'city',
+      'zip',
+      'lat',
+      'lon',
+      'timezone',
+      'org',
+      'as',
+      'query'
+    ].join(',');
+
+    const url =
+      'http://ip-api.com/json/' +
+      encodeURIComponent(cleanIp) +
+      '?fields=' +
+      encodeURIComponent(fields) +
+      '&lang=es';
+
+    const resp = UrlFetchApp.fetch(url, {
+      method: 'get',
+      muteHttpExceptions: true
+    });
+
+    const code = resp.getResponseCode();
+    const text = resp.getContentText();
+
+    Logger.log('ip-api STATUS ' + code + ': ' + text);
+
+    if (code < 200 || code >= 300) {
+      return {};
+    }
+
+    const data = JSON.parse(text || '{}');
+
+    if (String(data.status || '') !== 'success') {
+      Logger.log('ip-api payload fail: ' + text);
+      return {};
+    }
+
+    const out = {
+      ip_city: value_(data.city),
+      ip_region: value_(data.regionName),
+      ip_region_code: value_(data.region),
+      ip_country_name: value_(data.country),
+      ip_country_code: value_(data.countryCode),
+      ip_postal: value_(data.zip),
+      ip_latitude: normalizeCoordinate_(data.lat, ''),
+      ip_longitude: normalizeCoordinate_(data.lon, ''),
+      ip_lookup_timezone: value_(data.timezone),
+      ip_org: value_(data.org),
+      ip_asn: value_(data.as)
+    };
+
+    try {
+      cache.put(cacheKey, JSON.stringify(out), IP_GEO_CONFIG.CACHE_TTL_SEC);
+    } catch (err) {
+      Logger.log('ip-api cache write error: ' + err);
+    }
+
+    return out;
+  } catch (err) {
+    Logger.log('enrichIpData_ ip-api error: ' + err);
+    return {};
+  }
+}
+
+function inferIntentScore_(payload) {
+  let score = 0;
+
+  switch (payload.event_name) {
+    case 'page_view':
+      score = 1;
+      break;
+    case 'catalog_click':
+      score = 2;
+      break;
+    case 'share_open':
+      score = 3;
+      break;
+    case 'copy_link':
+      score = 4;
+      break;
+    case 'share_whatsapp':
+      score = 5;
+      break;
+    case 'join_channel':
+      score = 6;
+      break;
+    case 'return_visit':
+      score = 7;
+      break;
+    case 'whatsapp_capture':
+    case 'lead_capture':
+    case 'phone_capture':
+      score = 8;
+      break;
+    default:
+      score = 1;
+      break;
+  }
+
+  if (num_(payload.scroll_percent, 0) >= 50) score += 1;
+  if (num_(payload.engaged_seconds, 0) >= 15) score += 1;
+
+  if (payload.event_name === 'catalog_click' && num_(payload.catalogs_viewed_session, 0) >= 2) {
+    score += 2;
+  }
+
+  return score;
+}
+
+function inferManualMetaEvent_(payload) {
+  const rawEvent = cleanText_(payload.event_name || payload.EventName);
+  const leadStatus = cleanText_(payload.lead_status || payload.LeadStatus);
+  const value = num_(payload.value || payload.Value, 0);
+
+  const hasCustomerData = Boolean(
+    cleanText_(payload.customer_email || payload.CustomerEmail) ||
+      cleanText_(payload.customer_phone || payload.CustomerPhone) ||
+      cleanText_(payload.customer_first_name || payload.CustomerFirstName) ||
+      cleanText_(payload.customer_last_name || payload.CustomerLastName) ||
+      cleanText_(payload.external_id || payload.ExternalID)
+  );
+
+  if (
+    rawEvent === 'purchase' ||
+    rawEvent === 'sale' ||
+    value > 0 ||
+    /compra|compro|compró|purchase|venta|vendido|paid/i.test(leadStatus)
+  ) {
+    return 'Purchase';
+  }
+
+  if (
+    rawEvent === 'lead' ||
+    rawEvent === 'whatsapp_capture' ||
+    rawEvent === 'lead_capture' ||
+    rawEvent === 'phone_capture' ||
+    hasCustomerData ||
+    /lead|calificado|prospecto|interesado|contactado/i.test(leadStatus)
+  ) {
+    return 'Lead';
+  }
+
+  if (rawEvent === 'page_view' || rawEvent === 'return_visit' || rawEvent === 'pageview') {
+    return 'PageView';
+  }
+
+  return 'ViewContent';
+}
+
+function sendEventToMeta_(payload, metaEventName) {
+  const eventName = metaEventName || inferManualMetaEvent_(payload);
+  const endpoint =
+    'https://graph.facebook.com/' +
+    META_CONFIG.API_VERSION +
+    '/' +
+    META_CONFIG.PIXEL_ID +
+    '/events';
+
+  const userData = removeEmpty_({
+    client_user_agent: payload.ua || payload.UserAgent || '',
+    client_ip_address: payload.ip || payload.IP || '',
+    fbp: payload.fbp || payload.FBP || '',
+    fbc: payload.fbc || payload.FBC || '',
+    external_id: sha256_(
+      payload.external_id || payload.ExternalID || payload.visitor_id || payload.VisitorID || ''
+    ),
+    em: hashIfPresent_(payload.customer_email || payload.CustomerEmail, normalizeEmail_),
+    ph: hashIfPresent_(payload.customer_phone || payload.CustomerPhone, normalizePhone_),
+    fn: hashIfPresent_(payload.customer_first_name || payload.CustomerFirstName, normalizeText_),
+    ln: hashIfPresent_(payload.customer_last_name || payload.CustomerLastName, normalizeText_),
+    ct: hashIfPresent_(payload.customer_city || payload.CustomerCity, normalizeText_),
+    st: hashIfPresent_(payload.customer_region || payload.CustomerRegion, normalizeText_),
+    country: hashIfPresent_(payload.customer_country || payload.CustomerCountry, normalizeCountry_)
+  });
+
+  const customData = buildCustomData_(payload, eventName);
+  const fechaValue = payload.fecha || payload.Fecha;
+  const eventDate =
+    Object.prototype.toString.call(fechaValue) === '[object Date]' && !isNaN(fechaValue)
+      ? fechaValue
+      : new Date(fechaValue || new Date());
+
+  const body = {
+    data: [
+      {
+        event_name: eventName,
+        event_time: Math.floor(eventDate.getTime() / 1000),
+        event_id: payload.event_id || payload.EventID || generateId_('evt'),
+        action_source: 'website',
+        event_source_url: payload.page || payload.PageURL || '',
+        user_data: userData,
+        custom_data: customData
+      }
+    ]
+  };
+
+  if (META_CONFIG.TEST_EVENT_CODE) {
+    body.test_event_code = META_CONFIG.TEST_EVENT_CODE;
+  }
+
+  const options = {
+    method: 'post',
+    contentType: 'application/json',
+    muteHttpExceptions: true,
+    payload: JSON.stringify(body)
+  };
+
+  try {
+    const response = UrlFetchApp.fetch(
+      endpoint + '?access_token=' + encodeURIComponent(META_CONFIG.ACCESS_TOKEN),
+      options
+    );
+    const code = response.getResponseCode();
+    const text = response.getContentText();
+
+    return {
+      sent: code >= 200 && code < 300 ? 'SI' : 'ERROR',
+      response: text.slice(0, 500),
+      eventName: eventName,
+      eventId: body.data[0].event_id,
+      actionSource: 'website'
+    };
+  } catch (err) {
+    return {
+      sent: 'ERROR',
+      response: String(err).slice(0, 500),
+      eventName: eventName,
+      eventId: body.data[0].event_id,
+      actionSource: 'website'
+    };
+  }
+}
+
+function buildCustomData_(payload, metaEventName) {
+  const catalogo = payload.catalogo || payload.Catalogo || '';
+  const currency = payload.currency || payload.Currency || 'COP';
+  const value = num_(payload.value || payload.Value, '');
+
+  if (metaEventName === 'Purchase') {
+    return removeEmpty_({
+      content_name: catalogo,
+      content_category: 'catalogo',
+      content_ids: catalogo ? [catalogo] : undefined,
+      order_id: payload.order_id || payload.OrderID || '',
+      value: value,
+      currency: currency
+    });
+  }
+
+  if (metaEventName === 'Lead') {
+    return removeEmpty_({
+      content_name: catalogo,
+      content_category: 'catalogo',
+      content_ids: catalogo ? [catalogo] : undefined,
+      lead_status: payload.lead_status || payload.LeadStatus || '',
+      value: value,
+      currency: currency
+    });
+  }
+
+  return removeEmpty_({
+    content_name: catalogo,
+    content_category: 'catalogo',
+    content_ids: catalogo ? [catalogo] : undefined,
+    value: value,
+    currency: currency
+  });
+}
+
+function buildRowFromPayload_(payload, metaResult) {
+  return [
+    payload.fecha,
+    payload.catalogo,
+    payload.fuente,
+    payload.campana,
+    payload.destino,
+    payload.dispositivo,
+    payload.so,
+    payload.navegador,
+    payload.resolucion,
+    payload.idioma,
+    payload.timezone,
+    payload.referer,
+    payload.session_id,
+    payload.seconds_to_click,
+    payload.utm_source,
+    payload.utm_medium,
+    payload.utm_campaign,
+    payload.utm_content,
+    payload.utm_term,
+    payload.ua,
+    payload.page,
+    payload.visitor_id,
+    payload.event_name,
+    payload.event_id,
+    payload.event_source,
+    payload.first_landing_url,
+    payload.first_referrer,
+    payload.first_utm_source,
+    payload.first_utm_medium,
+    payload.first_utm_campaign,
+    payload.first_utm_content,
+    payload.first_utm_term,
+    payload.last_utm_source,
+    payload.last_utm_medium,
+    payload.last_utm_campaign,
+    payload.last_utm_content,
+    payload.last_utm_term,
+    payload.fbclid,
+    payload.fbp,
+    payload.fbc,
+    payload.engaged_seconds,
+    payload.scroll_percent,
+    payload.catalog_position,
+    payload.target_domain,
+    payload.click_count_session,
+    payload.catalogs_viewed_session,
+    payload.returning_user,
+    payload.local_hour,
+    payload.local_day_of_week,
+    payload.intent_score,
+    metaResult.sent,
+    metaResult.response,
+    metaResult.eventName,
+    metaResult.eventId,
+    metaResult.actionSource,
+    payload.ip,
+    payload.external_id,
+    payload.currency,
+    payload.value,
+    payload.customer_email,
+    payload.customer_phone,
+    payload.customer_first_name,
+    payload.customer_last_name,
+    payload.customer_city,
+    payload.customer_region,
+    payload.customer_country,
+    payload.lead_status,
+    payload.order_id,
+    '',
+
+    payload.ip_city || '',
+    payload.ip_region || '',
+    payload.ip_region_code || '',
+    payload.ip_country_name || '',
+    payload.ip_country_code || '',
+    payload.ip_postal || '',
+    normalizeCoordinate_(payload.ip_latitude, ''),
+    normalizeCoordinate_(payload.ip_longitude, ''),
+    payload.ip_lookup_timezone || '',
+    payload.ip_org || '',
+    payload.ip_asn || ''
+  ];
+}
+
+function updateMetaColumns_(sheet, rowNumber, idx, payload, result) {
+  sheet.getRange(rowNumber, idx.SentToMeta + 1).setValue(result.sent);
+  sheet.getRange(rowNumber, idx.MetaResponse + 1).setValue(result.response);
+  sheet.getRange(rowNumber, idx.MetaEventName + 1).setValue(result.eventName);
+  sheet.getRange(rowNumber, idx.MetaEventID + 1).setValue(result.eventId);
+  sheet.getRange(rowNumber, idx.MetaActionSource + 1).setValue(result.actionSource);
+  sheet.getRange(rowNumber, idx.ExternalID + 1).setValue(payload.external_id || payload.ExternalID || '');
+
+  if (typeof idx.MetaSentAt !== 'undefined') {
+    sheet
+      .getRange(rowNumber, idx.MetaSentAt + 1)
+      .setValue(new Date())
+      .setNumberFormat('dd/MM/yyyy HH:mm:ss');
+  }
+}
+
+function normalizeRowObjectForMeta_(rowMap, rowArray, idx, sheet, rowNumber) {
+  const payload = {
+    fecha: parseDate_(rowMap.Fecha),
+    catalogo: rowMap.Catalogo,
+    fuente: rowMap.Fuente,
+    campana: rowMap['Campaña'],
+    destino: rowMap.Destino,
+    dispositivo: rowMap.Dispositivo,
+    so: rowMap.SO,
+    navegador: rowMap.Navegador,
+    resolucion: rowMap.Resolucion,
+    idioma: rowMap.Idioma,
+    timezone: rowMap.Timezone,
+    referer: rowMap.Referer,
+    session_id: rowMap.SessionID || generateId_('sid'),
+    seconds_to_click: num_(rowMap.SecondsToClick),
+    utm_source: rowMap.UTM_Source,
+    utm_medium: rowMap.UTM_Medium,
+    utm_campaign: rowMap.UTM_Campaign,
+    utm_content: rowMap.UTM_Content,
+    utm_term: rowMap.UTM_Term,
+    ua: rowMap.UserAgent,
+    page: rowMap.PageURL,
+    visitor_id: rowMap.VisitorID || rowMap.ExternalID || generateId_('vid'),
+    event_name: rowMap.EventName || 'page_view',
+    event_id: rowMap.EventID || generateId_('evt'),
+    event_source: rowMap.EventSource || 'linktree',
+
+    first_landing_url: rowMap.FirstLandingURL,
+    first_referrer: rowMap.FirstReferer,
+    first_utm_source: rowMap.FirstUTM_Source,
+    first_utm_medium: rowMap.FirstUTM_Medium,
+    first_utm_campaign: rowMap.FirstUTM_Campaign,
+    first_utm_content: rowMap.FirstUTM_Content,
+    first_utm_term: rowMap.FirstUTM_Term,
+    last_utm_source: rowMap.LastUTM_Source,
+    last_utm_medium: rowMap.LastUTM_Medium,
+    last_utm_campaign: rowMap.LastUTM_Campaign,
+    last_utm_content: rowMap.LastUTM_Content,
+    last_utm_term: rowMap.LastUTM_Term,
+
+    fbclid: rowMap.FBCLID,
+    fbp: rowMap.FBP,
+    fbc: rowMap.FBC,
+    engaged_seconds: num_(rowMap.EngagedSeconds),
+    scroll_percent: num_(rowMap.ScrollPercent),
+    catalog_position: rowMap.CatalogPosition,
+    target_domain: rowMap.TargetDomain || getDomain_(rowMap.Destino),
+    click_count_session: num_(rowMap.ClickCountSession),
+    catalogs_viewed_session: num_(rowMap.CatalogsViewedSession),
+    returning_user: rowMap.ReturningUser,
+    local_hour: num_(rowMap.LocalHour),
+    local_day_of_week: rowMap.LocalDayOfWeek,
+    intent_score: num_(rowMap.IntentScore),
+    ip: rowMap.IP,
+    external_id: rowMap.ExternalID || rowMap.VisitorID,
+    currency: rowMap.Currency || 'COP',
+    value: num_(rowMap.Value),
+
+    customer_email: rowMap.CustomerEmail,
+    customer_phone: rowMap.CustomerPhone,
+    customer_first_name: rowMap.CustomerFirstName,
+    customer_last_name: rowMap.CustomerLastName,
+    customer_city: rowMap.CustomerCity,
+    customer_region: rowMap.CustomerRegion,
+    customer_country: rowMap.CustomerCountry,
+    lead_status: rowMap.LeadStatus,
+    order_id: rowMap.OrderID,
+
+    ip_city: rowMap.IP_City || '',
+    ip_region: rowMap.IP_Region || '',
+    ip_region_code: rowMap.IP_RegionCode || '',
+    ip_country_name: rowMap.IP_CountryName || '',
+    ip_country_code: rowMap.IP_CountryCode || '',
+    ip_postal: rowMap.IP_Postal || '',
+    ip_latitude: normalizeCoordinate_(rowMap.IP_Latitude, ''),
+    ip_longitude: normalizeCoordinate_(rowMap.IP_Longitude, ''),
+    ip_lookup_timezone: rowMap.IP_LookupTimezone || '',
+    ip_org: rowMap.IP_Org || '',
+    ip_asn: rowMap.IP_ASN || ''
+  };
+
+  if (!payload.event_id) {
+    payload.event_id = generateId_('evt');
+    sheet.getRange(rowNumber, idx.EventID + 1).setValue(payload.event_id);
+  }
+
+  if (!payload.external_id) {
+    payload.external_id = payload.visitor_id || generateId_('ext');
+    sheet.getRange(rowNumber, idx.ExternalID + 1).setValue(payload.external_id);
+  }
+
   return payload;
 }
 
-    function trackAndRedirect(item, position) {
-      statusEl.textContent = 'Abriendo catálogo...';
-      const clickCountSession = incrementClickCountSession();
-      const catalogsViewedSession = incrementCatalogsViewedSession();
-      const trackedTarget = buildCatalogTrackedUrl(item, 'click', 'open_catalog');
+function enrichExistingIpRows() {
+  const ss = SpreadsheetApp.openById(SHEET_ID);
+  const sheet = ss.getSheetByName(SHEET_NAME) || ss.insertSheet(SHEET_NAME);
 
-      trackEvent('catalog_click', {
-        catalogo: item.catalogo,
-        catalog_title: item.titulo,
-        target: trackedTarget,
-        target_domain: getTargetDomain(trackedTarget),
-        catalog_position: position,
-        click_count_session: clickCountSession,
-        catalogs_viewed_session: catalogsViewedSession,
-        event_source: 'linktree_click'
-      });
+  ensureHeaders_(sheet);
 
-      setTimeout(() => {
-        if (item.openInNewTab) {
-          window.open(trackedTarget, '_blank', 'noopener,noreferrer');
-        } else {
-          window.location.href = trackedTarget;
-        }
-      }, 180);
-    }
-
-    function getLinktreeShareData() {
-      const finalShareUrl = CONFIG.LINKTREE_SHARE_URL || CONFIG.LINKTREE_URL;
-      return {
-        type: 'linktree',
-        modalTitle: 'Compartir Linktree',
-        title: CONFIG.LINKTREE_NAME,
-        subtitle: `*/${CONFIG.LINKTREE_HANDLE}`,
-        url: finalShareUrl,
-        copyUrl: finalShareUrl,
-        whatsappUrl: finalShareUrl,
-        image: CONFIG.LINKTREE_SHARE_IMAGE,
-        fallbackImage: CONFIG.LINKTREE_SHARE_FALLBACK,
-        imageShape: 'circle',
-        whatsappText: `${CONFIG.LINKTREE_NAME}
-${CONFIG.LINKTREE_DESCRIPTION}
-${finalShareUrl}`,
-        copyTitle: 'Comparte este Linktree',
-        catalogo: '',
-        target: finalShareUrl
-      };
-    }
-
-    function getCatalogShareData(item) {
-      const shareUrl = buildCatalogTrackedUrl(item, 'share', 'modal');
-      const whatsappUrl = buildCatalogTrackedUrl(item, 'whatsapp', 'modal');
-      const copyUrl = buildCatalogTrackedUrl(item, 'copy', 'modal');
-      return {
-        type: 'catalogo',
-        modalTitle: 'Compartir catálogo',
-        title: item.titulo,
-        subtitle: shareUrl,
-        url: shareUrl,
-        copyUrl,
-        whatsappUrl,
-        image: item.img,
-        fallbackImage: item.fallbackImg,
-        imageShape: 'rounded',
-        whatsappText: `${item.titulo}
-${whatsappUrl}`,
-        copyTitle: 'Comparte este catálogo',
-        catalogo: item.catalogo,
-        target: shareUrl
-      };
-    }
-
-    function openShareModal(data, origin) {
-      currentShareData = data;
-      currentShareOrigin = origin || 'unknown';
-      currentShareCatalog = data.catalogo || '';
-
-      shareModalTitle.textContent = data.modalTitle;
-      previewTitle.textContent = data.title;
-      previewSubtitle.textContent = data.subtitle;
-      shareUrlText.textContent = data.url;
-      copyTitle.textContent = data.copyTitle;
-      previewImage.src = data.image;
-      previewImage.alt = data.title;
-      previewImage.onerror = () => {
-        previewImage.src = data.fallbackImage;
-      };
-
-      previewImageWrap.classList.toggle('circle', data.imageShape === 'circle');
-      shareModal.classList.add('active');
-      document.body.style.overflow = 'hidden';
-
-      trackEvent('share_open', {
-        catalogo: currentShareCatalog,
-        target: data.url || '',
-        target_domain: getTargetDomain(data.url || ''),
-        event_source: origin || 'modal'
-      });
-    }
-
-    function closeShareModal() {
-      shareModal.classList.remove('active');
-      document.body.style.overflow = '';
-    }
-
-    async function copyCurrentShareLink() {
-      const finalUrl = currentShareData?.copyUrl || currentShareData?.url;
-      if (!finalUrl) return;
-
-      try {
-        await navigator.clipboard.writeText(finalUrl);
-        copyLinkBtn.textContent = '¡Enlace copiado!';
-        copyLinkBtn.classList.add('copied');
-
-        trackEvent('copy_link', {
-          catalogo: currentShareCatalog,
-          target: finalUrl,
-          target_domain: getTargetDomain(finalUrl),
-          event_source: currentShareOrigin || 'modal'
-        });
-
-        setTimeout(() => {
-          copyLinkBtn.textContent = 'Copiar enlace';
-          copyLinkBtn.classList.remove('copied');
-        }, 1800);
-      } catch (error) {
-        alert('No se pudo copiar el enlace.');
-      }
-    }
-
-    async function copyCurrentShareLinkTop() {
-      const finalUrl = currentShareData?.copyUrl || currentShareData?.url;
-      if (!finalUrl) return;
-
-      try {
-        await navigator.clipboard.writeText(finalUrl);
-        trackEvent('copy_link', {
-          catalogo: currentShareCatalog,
-          target: finalUrl,
-          target_domain: getTargetDomain(finalUrl),
-          event_source: currentShareOrigin || 'modal'
-        });
-
-        const original = copyLinkTopBtn.querySelector('span');
-        original.textContent = '¡Copiado!';
-        setTimeout(() => {
-          original.textContent = 'Copiar link';
-        }, 1600);
-      } catch (error) {
-        alert('No se pudo copiar el enlace.');
-      }
-    }
-
-    function shareWhatsapp() {
-      const finalUrl = currentShareData?.whatsappUrl || currentShareData?.url;
-      if (!finalUrl || !currentShareData?.title) return;
-
-      trackEvent('share_whatsapp', {
-        catalogo: currentShareCatalog,
-        target: finalUrl,
-        target_domain: 'wa.me',
-        event_source: currentShareOrigin || 'modal'
-      });
-
-      const text = encodeURIComponent(`${currentShareData.title}
-${finalUrl}`);
-      safeOpen(`https://wa.me/?text=${text}`);
-    }
-
-    function createCatalogRow(item, position) {
-      const row = document.createElement('div');
-      row.className = 'catalog-row';
-
-      const mainBtn = document.createElement('button');
-      mainBtn.className = 'catalog-main';
-      mainBtn.type = 'button';
-      mainBtn.setAttribute('aria-label', `Abrir catálogo ${item.titulo}`);
-      mainBtn.innerHTML = `
-        <div class="thumb">
-          <img src="${item.img}" alt="${item.catalogo}" onerror="this.src='${item.fallbackImg}'" />
-        </div>
-        <div class="btn-text">${item.titulo}</div>
-      `;
-
-      mainBtn.addEventListener('click', () => {
-        trackAndRedirect(item, position);
-      });
-
-      const shareDotsBtn = document.createElement('button');
-      shareDotsBtn.className = 'catalog-share';
-      shareDotsBtn.type = 'button';
-      shareDotsBtn.innerHTML = '⋮';
-      shareDotsBtn.setAttribute('aria-label', `Compartir catálogo ${item.titulo}`);
-      shareDotsBtn.addEventListener('click', (event) => {
-        event.stopPropagation();
-        openShareModal(getCatalogShareData(item), 'catalog_share_button');
-      });
-
-      row.appendChild(mainBtn);
-      row.appendChild(shareDotsBtn);
-      return row;
-    }
-
-    window.addEventListener('scroll', () => {
-      const scrollTop = window.scrollY || document.documentElement.scrollTop || 0;
-      const documentHeight = Math.max(document.body.scrollHeight, document.documentElement.scrollHeight) - window.innerHeight;
-      if (documentHeight <= 0) return;
-      const currentPercent = Math.max(0, Math.min(100, Math.round((scrollTop / documentHeight) * 100)));
-      if (currentPercent > maxScrollPercent) maxScrollPercent = currentPercent;
-    });
-
-    if (leadPhoneForm) {
-      leadPhoneForm.addEventListener('submit', handleLeadPhoneSubmit);
-    }
-
-    persistFirstTouch();
-    showLeadGateIfNeeded();
-
-// Iniciar captura de IP apenas cargue la página
-fetchPublicIp().catch((error) => {
-  console.warn('No se pudo precargar la IP:', error);
-});
-
-CATALOGOS.forEach((item, index) => {
-  linksEl.appendChild(createCatalogRow(item, index + 1));
-});
-
-    shareBtn.addEventListener('click', () => {
-      openShareModal(getLinktreeShareData(), 'top_share_button');
-    });
-
-    shareBottomBtn.addEventListener('click', () => {
-      const trackedChannelUrl = CONFIG.AGOTADOS_CHANNEL_URL;
-      trackEvent('join_channel', {
-        catalogo: '',
-        target: trackedChannelUrl,
-        target_domain: getTargetDomain(trackedChannelUrl),
-        event_source: 'bottom_join_button'
-      });
-      safeOpen(trackedChannelUrl);
-    });
-
-    closeModalBtn.addEventListener('click', closeShareModal);
-    copyLinkBtn.addEventListener('click', copyCurrentShareLink);
-    copyLinkTopBtn.addEventListener('click', copyCurrentShareLinkTop);
-    shareWhatsappBtn.addEventListener('click', shareWhatsapp);
-
-    shareModal.addEventListener('click', (event) => {
-      if (event.target === shareModal) closeShareModal();
-    });
-
-    document.addEventListener('keydown', (event) => {
-      if (event.key === 'Escape') closeShareModal();
-    });
-
-    (async function initTracking() {
-  const pageViewKey = `tirssa_page_view_sent::${window.location.href}`;
-
-  // Espera breve para intentar capturar IP antes del primer envío
-  await waitForPublicIp(1200);
-
-  if (!storageGet('session', pageViewKey)) {
-    storageSet('session', pageViewKey, '1');
-    trackEvent('page_view', {
-      event_source: 'page_load',
-      ip: getStoredPublicIp()
-    });
+  const values = sheet.getDataRange().getValues();
+  if (values.length < 2) {
+    SpreadsheetApp.getUi().alert('No hay filas para enriquecer.');
+    return;
   }
-})();
-  </script>
 
-</body>
-</html>
+  const headers = values[0];
+  const idx = indexMap_(headers);
+  let updated = 0;
+
+  for (let i = 1; i < values.length; i += 1) {
+    const rowNumber = i + 1;
+    const ip = String(values[i][idx.IP] || '').trim();
+
+    if (!ip) continue;
+
+    const currentLat = typeof idx.IP_Latitude !== 'undefined' ? values[i][idx.IP_Latitude] : '';
+    const currentLon = typeof idx.IP_Longitude !== 'undefined' ? values[i][idx.IP_Longitude] : '';
+    const currentCity = typeof idx.IP_City !== 'undefined' ? String(values[i][idx.IP_City] || '').trim() : '';
+
+    const latOk = coordinateLooksValid_(currentLat, -90, 90);
+    const lonOk = coordinateLooksValid_(currentLon, -180, 180);
+    const shouldRefresh = !currentCity || !latOk || !lonOk;
+
+    if (!shouldRefresh) continue;
+
+    const extra = enrichIpData_(ip);
+    if (!extra || !Object.keys(extra).length) continue;
+
+    if (typeof idx.IP_City !== 'undefined') {
+      sheet.getRange(rowNumber, idx.IP_City + 1).setValue(extra.ip_city || '');
+    }
+    if (typeof idx.IP_Region !== 'undefined') {
+      sheet.getRange(rowNumber, idx.IP_Region + 1).setValue(extra.ip_region || '');
+    }
+    if (typeof idx.IP_RegionCode !== 'undefined') {
+      sheet.getRange(rowNumber, idx.IP_RegionCode + 1).setValue(extra.ip_region_code || '');
+    }
+    if (typeof idx.IP_CountryName !== 'undefined') {
+      sheet.getRange(rowNumber, idx.IP_CountryName + 1).setValue(extra.ip_country_name || '');
+    }
+    if (typeof idx.IP_CountryCode !== 'undefined') {
+      sheet.getRange(rowNumber, idx.IP_CountryCode + 1).setValue(extra.ip_country_code || '');
+    }
+    if (typeof idx.IP_Postal !== 'undefined') {
+      sheet.getRange(rowNumber, idx.IP_Postal + 1).setValue(extra.ip_postal || '');
+    }
+    if (typeof idx.IP_Latitude !== 'undefined') {
+      sheet.getRange(rowNumber, idx.IP_Latitude + 1).setValue(normalizeCoordinate_(extra.ip_latitude, ''));
+      sheet.getRange(rowNumber, idx.IP_Latitude + 1).setNumberFormat('0.000000');
+    }
+    if (typeof idx.IP_Longitude !== 'undefined') {
+      sheet.getRange(rowNumber, idx.IP_Longitude + 1).setValue(normalizeCoordinate_(extra.ip_longitude, ''));
+      sheet.getRange(rowNumber, idx.IP_Longitude + 1).setNumberFormat('0.000000');
+    }
+    if (typeof idx.IP_LookupTimezone !== 'undefined') {
+      sheet.getRange(rowNumber, idx.IP_LookupTimezone + 1).setValue(extra.ip_lookup_timezone || '');
+    }
+    if (typeof idx.IP_Org !== 'undefined') {
+      sheet.getRange(rowNumber, idx.IP_Org + 1).setValue(extra.ip_org || '');
+    }
+    if (typeof idx.IP_ASN !== 'undefined') {
+      sheet.getRange(rowNumber, idx.IP_ASN + 1).setValue(extra.ip_asn || '');
+    }
+
+    updated += 1;
+  }
+
+  SpreadsheetApp.getUi().alert('Proceso terminado.\n\nFilas enriquecidas/corregidas: ' + updated);
+}
+
+function rowToObject_(headers, row) {
+  const obj = {};
+  headers.forEach(function (header, index) {
+    obj[header] = row[index];
+  });
+  return obj;
+}
+
+function indexMap_(headers) {
+  const map = {};
+  headers.forEach(function (header, index) {
+    map[header] = index;
+  });
+  return map;
+}
+
+function removeEmpty_(obj) {
+  const out = {};
+
+  Object.keys(obj).forEach(function (key) {
+    const value = obj[key];
+    const isArray = Object.prototype.toString.call(value) === '[object Array]';
+
+    if (isArray && value.length) {
+      out[key] = value;
+      return;
+    }
+
+    if (value !== '' && value !== null && typeof value !== 'undefined') {
+      out[key] = value;
+    }
+  });
+
+  return out;
+}
+
+function value_(v) {
+  return v == null ? '' : String(v).trim();
+}
+
+function cleanText_(v) {
+  return String(v == null ? '' : v).trim().toLowerCase();
+}
+
+function num_(v, fallback) {
+  if (v === null || v === '' || typeof v === 'undefined') {
+    return typeof fallback === 'undefined' ? '' : fallback;
+  }
+
+  if (typeof v === 'number') {
+    return v;
+  }
+
+  const cleaned = String(v).replace(',', '.').trim();
+  const parsed = Number(cleaned);
+
+  if (isNaN(parsed)) {
+    return typeof fallback === 'undefined' ? '' : fallback;
+  }
+
+  return parsed;
+}
+
+function parseDate_(value) {
+  if (Object.prototype.toString.call(value) === '[object Date]' && !isNaN(value)) {
+    return value;
+  }
+
+  if (!value) return new Date();
+
+  const str = String(value).trim();
+  const parts = str.split(' ');
+  const datePart = parts[0] || '';
+  const timePart = parts[1] || '00:00:00';
+  const d = datePart.split('/');
+
+  if (d.length === 3) {
+    const day = Number(d[0]);
+    const month = Number(d[1]);
+    const year = Number(d[2]);
+    const t = timePart.split(':');
+
+    return new Date(
+      year,
+      month - 1,
+      day,
+      Number(t[0] || 0),
+      Number(t[1] || 0),
+      Number(t[2] || 0)
+    );
+  }
+
+  const fallback = new Date(str);
+  return isNaN(fallback) ? new Date() : fallback;
+}
+
+function getDomain_(url) {
+  try {
+    return url ? url.match(/^https?:\/\/([^/?#]+)/i)[1] : '';
+  } catch (err) {
+    return '';
+  }
+}
+
+function generateId_(prefix) {
+  return (
+    String(prefix || 'id') +
+    '-' +
+    Utilities.getUuid().slice(0, 8) +
+    '-' +
+    new Date().getTime().toString(36).toUpperCase()
+  );
+}
+
+function normalizeEmail_(value) {
+  return String(value || '').trim().toLowerCase();
+}
+
+function normalizePhone_(value) {
+  return String(value || '').replace(/\D+/g, '');
+}
+
+function normalizeText_(value) {
+  return String(value || '')
+    .trim()
+    .toLowerCase()
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .replace(/\s+/g, ' ');
+}
+
+function normalizeCountry_(value) {
+  return normalizeText_(value).replace(/\s+/g, '');
+}
+
+function hashIfPresent_(value, normalizer) {
+  const normalized = normalizer ? normalizer(value) : String(value || '').trim();
+  return normalized ? sha256_(normalized) : '';
+}
+
+function sha256_(value) {
+  if (!value) return '';
+
+  const raw = Utilities.computeDigest(
+    Utilities.DigestAlgorithm.SHA_256,
+    String(value)
+  );
+
+  return raw
+    .map(function (byte) {
+      const v = byte < 0 ? byte + 256 : byte;
+      return ('0' + v.toString(16)).slice(-2);
+    })
+    .join('');
+}
+
+function jsonOutput_(obj) {
+  return ContentService.createTextOutput(JSON.stringify(obj)).setMimeType(
+    ContentService.MimeType.JSON
+  );
+}
+
+/*******************************************************
+ * LEAD SCORING AUTOMÁTICO 
+ * Guarda / actualiza una fila consolidada por visitante
+ * en la hoja "Lead", usando los eventos de "Hoja 1".
+ *******************************************************/
+
+const LEAD_CONFIG = {
+  SHEET_NAME: 'Lead',
+  DEFAULT_STATUS: 'Nuevo'
+};
+
+const LEAD_HEADERS = [
+  'LeadKey',
+  'FechaPrimerEvento',
+  'FechaUltimoEvento',
+  'TipoCliente',
+  'Prioridad',
+  'Score',
+  'EstadoLead',
+  'MotivoClasificacion',
+  'AccionRecomendada',
+  'MensajeSugerido',
+  'WhatsAppLink',
+  'CatalogoPrincipal',
+  'CatalogosVistos',
+  'TotalEventos',
+  'PageViews',
+  'CatalogClicks',
+  'ShareOpens',
+  'CopyLinks',
+  'WhatsappShares',
+  'JoinChannel',
+  'ReturningUser',
+  'IntentMax',
+  'IntentTotal',
+  'SecondsToClickMin',
+  'EngagedSecondsMax',
+  'ScrollMax',
+  'ClickCountMax',
+  'CatalogsViewedMax',
+  'UltimoEvento',
+  'UltimoEventID',
+  'Fuente',
+  'Campaña',
+  'UTM_Source',
+  'UTM_Medium',
+  'UTM_Campaign',
+  'UTM_Content',
+  'UTM_Term',
+  'Dispositivo',
+  'SO',
+  'Navegador',
+  'Idioma',
+  'Timezone',
+  'IP',
+  'IP_City',
+  'IP_Region',
+  'IP_Country',
+  'IP_CountryCode',
+  'IP_Org',
+  'IP_ASN',
+  'VisitorID',
+  'SessionID',
+  'ExternalID',
+  'CustomerPhone',
+  'CustomerEmail',
+  'CustomerCity',
+  'CustomerRegion',
+  'CustomerCountry',
+  'PageURL',
+  'Destino',
+  'TargetDomain',
+  'FirstLandingURL',
+  'FirstReferer',
+  'Flags',
+  'Responsable',
+  'NotasComercial',
+  'ProximaAccion',
+  'FechaSeguimiento',
+  'UpdatedAt'
+];
+
+function setupLeadSheet() {
+  const ss = SpreadsheetApp.openById(SHEET_ID);
+  const sheet = getOrCreateLeadSheet_(ss);
+  ensureLeadHeaders_(sheet);
+  formatLeadSheet_(sheet);
+
+  SpreadsheetApp.getUi().alert('Hoja Lead lista ✅\n\nYa puede recibir clasificación automática de visitantes.');
+}
+
+function getOrCreateLeadSheet_(ss) {
+  return ss.getSheetByName(LEAD_CONFIG.SHEET_NAME) || ss.insertSheet(LEAD_CONFIG.SHEET_NAME);
+}
+
+function ensureLeadHeaders_(sheet) {
+  const neededColumns = LEAD_HEADERS.length;
+  const maxColumns = sheet.getMaxColumns();
+
+  if (maxColumns < neededColumns) {
+    sheet.insertColumnsAfter(maxColumns, neededColumns - maxColumns);
+  }
+
+  const currentHeaders =
+    sheet.getLastColumn() > 0
+      ? sheet.getRange(1, 1, 1, Math.max(sheet.getLastColumn(), neededColumns)).getValues()[0]
+      : [];
+
+  const needsRewrite = LEAD_HEADERS.some(function (header, index) {
+    return String(currentHeaders[index] || '').trim() !== header;
+  });
+
+  if (needsRewrite) {
+    sheet.getRange(1, 1, 1, neededColumns).setValues([LEAD_HEADERS]);
+  }
+}
+
+function formatLeadSheet_(sheet) {
+  ensureLeadHeaders_(sheet);
+  sheet.setFrozenRows(1);
+
+  sheet
+    .getRange(1, 1, 1, LEAD_HEADERS.length)
+    .setFontWeight('bold')
+    .setBackground('#111827')
+    .setFontColor('#FFFFFF')
+    .setHorizontalAlignment('center');
+
+  sheet.setColumnWidth(1, 190); // LeadKey
+  sheet.setColumnWidth(4, 130); // TipoCliente
+  sheet.setColumnWidth(5, 110); // Prioridad
+  sheet.setColumnWidth(8, 300); // Motivo
+  sheet.setColumnWidth(9, 320); // Acción
+  sheet.setColumnWidth(10, 420); // Mensaje
+  sheet.setColumnWidth(11, 220); // WhatsApp
+  sheet.setColumnWidth(13, 260); // Catálogos vistos
+  sheet.setColumnWidth(63, 260); // Flags
+  sheet.setColumnWidth(65, 320); // Notas
+
+  const maxRows = Math.max(sheet.getMaxRows() - 1, 1);
+  setLeadColumnFormat_(sheet, ['FechaPrimerEvento', 'FechaUltimoEvento', 'FechaSeguimiento', 'UpdatedAt'], 'dd/MM/yyyy HH:mm:ss', maxRows);
+  setLeadColumnFormat_(sheet, ['Score', 'TotalEventos', 'PageViews', 'CatalogClicks', 'ShareOpens', 'CopyLinks', 'WhatsappShares', 'JoinChannel', 'IntentMax', 'IntentTotal', 'SecondsToClickMin', 'EngagedSecondsMax', 'ScrollMax', 'ClickCountMax', 'CatalogsViewedMax'], '0.0', maxRows);
+
+  try {
+    const priorityCol = getLeadColumn_('Prioridad');
+    const scoreCol = getLeadColumn_('Score');
+    if (priorityCol && scoreCol) {
+      const range = sheet.getRange(2, 1, Math.max(sheet.getMaxRows() - 1, 1), LEAD_HEADERS.length);
+      const rules = [
+        SpreadsheetApp.newConditionalFormatRule()
+          .whenTextEqualTo('Alta')
+          .setBackground('#DCFCE7')
+          .setRanges([sheet.getRange(2, priorityCol, Math.max(sheet.getMaxRows() - 1, 1), 1)])
+          .build(),
+        SpreadsheetApp.newConditionalFormatRule()
+          .whenTextEqualTo('Media')
+          .setBackground('#FEF3C7')
+          .setRanges([sheet.getRange(2, priorityCol, Math.max(sheet.getMaxRows() - 1, 1), 1)])
+          .build(),
+        SpreadsheetApp.newConditionalFormatRule()
+          .whenTextEqualTo('Ignorar')
+          .setBackground('#E5E7EB')
+          .setRanges([sheet.getRange(2, priorityCol, Math.max(sheet.getMaxRows() - 1, 1), 1)])
+          .build(),
+        SpreadsheetApp.newConditionalFormatRule()
+          .whenNumberGreaterThanOrEqualTo(75)
+          .setBackground('#BBF7D0')
+          .setRanges([sheet.getRange(2, scoreCol, Math.max(sheet.getMaxRows() - 1, 1), 1)])
+          .build()
+      ];
+      sheet.setConditionalFormatRules(rules);
+    }
+  } catch (err) {
+    Logger.log('formatLeadSheet_ conditional format error: ' + err);
+  }
+}
+
+function setLeadColumnFormat_(sheet, headers, format, maxRows) {
+  headers.forEach(function (header) {
+    const col = getLeadColumn_(header);
+    if (!col) return;
+    try {
+      sheet.getRange(2, col, maxRows, 1).setNumberFormat(format);
+    } catch (err) {
+      Logger.log('setLeadColumnFormat_ error: ' + err);
+    }
+  });
+}
+
+function getLeadColumn_(header) {
+  const idx = LEAD_HEADERS.indexOf(header);
+  return idx === -1 ? 0 : idx + 1;
+}
+
+function updateLeadFromPayload_(ss, payload) {
+  const sheet = getOrCreateLeadSheet_(ss);
+  ensureLeadHeaders_(sheet);
+
+  const leadKey = getLeadKeyFromPayload_(payload);
+  if (!leadKey) {
+    return { ok: false, error: 'Sin LeadKey' };
+  }
+
+  const rowNumber = findLeadRowByKey_(sheet, leadKey);
+  let lead = rowNumber ? readLeadRow_(sheet, rowNumber) : createEmptyLead_(leadKey);
+
+  updateLeadObjectFromPayload_(lead, payload);
+  finalizeLeadClassification_(lead);
+
+  const finalRow = buildLeadRow_(lead);
+
+  if (rowNumber) {
+    sheet.getRange(rowNumber, 1, 1, LEAD_HEADERS.length).setValues([finalRow]);
+    formatLeadRow_(sheet, rowNumber);
+  } else {
+    sheet.appendRow(finalRow);
+    formatLeadRow_(sheet, sheet.getLastRow());
+  }
+
+  return {
+    ok: true,
+    lead_key: leadKey,
+    tipo_cliente: lead.TipoCliente,
+    prioridad: lead.Prioridad,
+    score: lead.Score
+  };
+}
+
+function findLeadRowByKey_(sheet, leadKey) {
+  const lastRow = sheet.getLastRow();
+  if (lastRow < 2) return 0;
+
+  const values = sheet.getRange(2, 1, lastRow - 1, 1).getValues();
+  const target = String(leadKey || '').trim();
+
+  for (let i = 0; i < values.length; i += 1) {
+    if (String(values[i][0] || '').trim() === target) {
+      return i + 2;
+    }
+  }
+
+  return 0;
+}
+
+function readLeadRow_(sheet, rowNumber) {
+  const row = sheet.getRange(rowNumber, 1, 1, LEAD_HEADERS.length).getValues()[0];
+  const obj = {};
+
+  LEAD_HEADERS.forEach(function (header, index) {
+    obj[header] = row[index];
+  });
+
+  return obj;
+}
+
+function createEmptyLead_(leadKey) {
+  const obj = {};
+  LEAD_HEADERS.forEach(function (header) {
+    obj[header] = '';
+  });
+  obj.LeadKey = leadKey;
+  obj.EstadoLead = LEAD_CONFIG.DEFAULT_STATUS;
+  return obj;
+}
+
+function buildLeadRow_(lead) {
+  return LEAD_HEADERS.map(function (header) {
+    return typeof lead[header] === 'undefined' ? '' : lead[header];
+  });
+}
+
+function formatLeadRow_(sheet, rowNumber) {
+  ['FechaPrimerEvento', 'FechaUltimoEvento', 'FechaSeguimiento', 'UpdatedAt'].forEach(function (header) {
+    const col = getLeadColumn_(header);
+    if (col) sheet.getRange(rowNumber, col).setNumberFormat('dd/MM/yyyy HH:mm:ss');
+  });
+
+  ['Score', 'TotalEventos', 'PageViews', 'CatalogClicks', 'ShareOpens', 'CopyLinks', 'WhatsappShares', 'JoinChannel', 'IntentMax', 'IntentTotal', 'SecondsToClickMin', 'EngagedSecondsMax', 'ScrollMax', 'ClickCountMax', 'CatalogsViewedMax'].forEach(function (header) {
+    const col = getLeadColumn_(header);
+    if (col) sheet.getRange(rowNumber, col).setNumberFormat('0.0');
+  });
+}
+
+function getLeadKeyFromPayload_(payload) {
+  const visitor = value_(payload.visitor_id || payload.VisitorID);
+  if (visitor) return 'VID::' + visitor;
+
+  const external = value_(payload.external_id || payload.ExternalID);
+  if (external) return 'EXT::' + external;
+
+  const session = value_(payload.session_id || payload.SessionID);
+  if (session) return 'SID::' + session;
+
+  const ip = value_(payload.ip || payload.IP);
+  const ua = value_(payload.ua || payload.UserAgent);
+  if (ip || ua) return 'FALLBACK::' + sha256_([ip, ua].join('|')).slice(0, 16);
+
+  return '';
+}
+
+function updateLeadObjectFromPayload_(lead, payload) {
+  const eventDate = normalizeLeadDate_(payload.fecha || payload.Fecha || new Date());
+  const eventName = cleanText_(payload.event_name || payload.EventName || 'page_view');
+  const eventId = value_(payload.event_id || payload.EventID);
+  const catalogo = value_(payload.catalogo || payload.Catalogo);
+  const flags = detectLeadFlags_(payload);
+
+  if (!lead.FechaPrimerEvento) lead.FechaPrimerEvento = eventDate;
+  lead.FechaUltimoEvento = eventDate;
+  lead.UpdatedAt = new Date();
+
+  incrementLeadNumber_(lead, 'TotalEventos', 1);
+
+  if (eventName === 'page_view' || eventName === 'pageview') incrementLeadNumber_(lead, 'PageViews', 1);
+  if (eventName === 'catalog_click') incrementLeadNumber_(lead, 'CatalogClicks', 1);
+  if (eventName === 'share_open') incrementLeadNumber_(lead, 'ShareOpens', 1);
+  if (eventName === 'copy_link') incrementLeadNumber_(lead, 'CopyLinks', 1);
+  if (eventName === 'share_whatsapp') incrementLeadNumber_(lead, 'WhatsappShares', 1);
+  if (eventName === 'join_channel') incrementLeadNumber_(lead, 'JoinChannel', 1);
+
+  if (catalogo) {
+    lead.CatalogosVistos = addCsvUnique_(lead.CatalogosVistos, catalogo);
+    if (!lead.CatalogoPrincipal || eventName === 'catalog_click' || eventName === 'share_whatsapp' || eventName === 'copy_link') {
+      lead.CatalogoPrincipal = catalogo;
+    }
+  }
+
+  lead.ReturningUser = leadBool_(lead.ReturningUser) || leadBool_(payload.returning_user || payload.ReturningUser) ? 'true' : 'false';
+  lead.IntentMax = Math.max(leadNum_(lead.IntentMax, 0), leadNum_(payload.intent_score || payload.IntentScore, 0));
+  lead.IntentTotal = leadNum_(lead.IntentTotal, 0) + leadNum_(payload.intent_score || payload.IntentScore, 0);
+
+  const seconds = leadNum_(payload.seconds_to_click || payload.SecondsToClick, 0);
+  if (seconds > 0) {
+    const currentMin = leadNum_(lead.SecondsToClickMin, 0);
+    lead.SecondsToClickMin = currentMin > 0 ? Math.min(currentMin, seconds) : seconds;
+  }
+
+  lead.EngagedSecondsMax = Math.max(leadNum_(lead.EngagedSecondsMax, 0), leadNum_(payload.engaged_seconds || payload.EngagedSeconds, 0));
+  lead.ScrollMax = Math.max(leadNum_(lead.ScrollMax, 0), leadNum_(payload.scroll_percent || payload.ScrollPercent, 0));
+  lead.ClickCountMax = Math.max(leadNum_(lead.ClickCountMax, 0), leadNum_(payload.click_count_session || payload.ClickCountSession, 0));
+  lead.CatalogsViewedMax = Math.max(leadNum_(lead.CatalogsViewedMax, 0), leadNum_(payload.catalogs_viewed_session || payload.CatalogsViewedSession, 0));
+
+  lead.UltimoEvento = eventName;
+  lead.UltimoEventID = eventId;
+  lead.Flags = mergeCsv_(lead.Flags, flags.join(', '));
+
+  copyLeadIfPresent_(lead, 'Fuente', payload.fuente || payload.Fuente || payload.src || payload.source);
+  copyLeadIfPresent_(lead, 'Campaña', payload.campana || payload['Campaña'] || payload.campaign);
+  copyLeadIfPresent_(lead, 'UTM_Source', payload.utm_source || payload.UTM_Source);
+  copyLeadIfPresent_(lead, 'UTM_Medium', payload.utm_medium || payload.UTM_Medium);
+  copyLeadIfPresent_(lead, 'UTM_Campaign', payload.utm_campaign || payload.UTM_Campaign);
+  copyLeadIfPresent_(lead, 'UTM_Content', payload.utm_content || payload.UTM_Content);
+  copyLeadIfPresent_(lead, 'UTM_Term', payload.utm_term || payload.UTM_Term);
+  copyLeadIfPresent_(lead, 'Dispositivo', payload.dispositivo || payload.Dispositivo || payload.device);
+  copyLeadIfPresent_(lead, 'SO', payload.so || payload.SO || payload.os);
+  copyLeadIfPresent_(lead, 'Navegador', payload.navegador || payload.Navegador || payload.browser);
+  copyLeadIfPresent_(lead, 'Idioma', payload.idioma || payload.Idioma || payload.lang || payload.language);
+  copyLeadIfPresent_(lead, 'Timezone', payload.timezone || payload.Timezone);
+  copyLeadIfPresent_(lead, 'IP', payload.ip || payload.IP);
+  copyLeadIfPresent_(lead, 'IP_City', payload.ip_city || payload.IP_City);
+  copyLeadIfPresent_(lead, 'IP_Region', payload.ip_region || payload.IP_Region);
+  copyLeadIfPresent_(lead, 'IP_Country', payload.ip_country_name || payload.IP_CountryName || payload.IP_Country);
+  copyLeadIfPresent_(lead, 'IP_CountryCode', payload.ip_country_code || payload.IP_CountryCode);
+  copyLeadIfPresent_(lead, 'IP_Org', payload.ip_org || payload.IP_Org);
+  copyLeadIfPresent_(lead, 'IP_ASN', payload.ip_asn || payload.IP_ASN);
+  copyLeadIfPresent_(lead, 'VisitorID', payload.visitor_id || payload.VisitorID);
+  copyLeadIfPresent_(lead, 'SessionID', payload.session_id || payload.SessionID);
+  copyLeadIfPresent_(lead, 'ExternalID', payload.external_id || payload.ExternalID);
+  copyLeadIfPresent_(lead, 'CustomerPhone', payload.customer_phone || payload.CustomerPhone);
+  copyLeadIfPresent_(lead, 'CustomerEmail', payload.customer_email || payload.CustomerEmail);
+  copyLeadIfPresent_(lead, 'CustomerCity', payload.customer_city || payload.CustomerCity);
+  copyLeadIfPresent_(lead, 'CustomerRegion', payload.customer_region || payload.CustomerRegion);
+  copyLeadIfPresent_(lead, 'CustomerCountry', payload.customer_country || payload.CustomerCountry);
+  copyLeadIfPresent_(lead, 'PageURL', payload.page || payload.PageURL);
+  copyLeadIfPresent_(lead, 'Destino', payload.destino || payload.Destino || payload.target);
+  copyLeadIfPresent_(lead, 'TargetDomain', payload.target_domain || payload.TargetDomain || getDomain_(payload.destino || payload.Destino || payload.target || ''));
+  copyLeadIfPresent_(lead, 'FirstLandingURL', payload.first_landing_url || payload.FirstLandingURL);
+  copyLeadIfPresent_(lead, 'FirstReferer', payload.first_referrer || payload.FirstReferer || payload.referer || payload.Referer);
+
+  if (!lead.EstadoLead) lead.EstadoLead = LEAD_CONFIG.DEFAULT_STATUS;
+}
+
+function finalizeLeadClassification_(lead) {
+  const score = calculateLeadScore_(lead);
+  const flags = cleanText_(lead.Flags);
+  const bot = flags.indexOf('bot_o_preview') > -1;
+  const protectedUser = flags.indexOf('ip_oculta') > -1 || flags.indexOf('tracking_limitado') > -1;
+
+  let tipo = 'Frío';
+  let prioridad = 'Baja';
+
+  if (bot) {
+    tipo = 'Bot / Preview';
+    prioridad = 'Ignorar';
+  } else if (score >= 75) {
+    tipo = 'Caliente';
+    prioridad = 'Alta';
+  } else if (score >= 50) {
+    tipo = 'Interesado';
+    prioridad = 'Media';
+  } else if (score >= 25) {
+    tipo = protectedUser ? 'Curioso protegido' : 'Curioso';
+    prioridad = protectedUser ? 'Revisar' : 'Baja';
+  } else if (protectedUser) {
+    tipo = 'Protegido / sin datos';
+    prioridad = 'Revisar';
+  }
+
+  lead.Score = score;
+  lead.TipoCliente = tipo;
+  lead.Prioridad = prioridad;
+  lead.MotivoClasificacion = buildLeadReason_(lead);
+  lead.AccionRecomendada = buildLeadAction_(lead);
+  lead.MensajeSugerido = buildLeadMessage_(lead);
+  lead.WhatsAppLink = buildLeadWhatsappLink_(lead);
+}
+
+function calculateLeadScore_(lead) {
+  const flags = cleanText_(lead.Flags);
+  const bot = flags.indexOf('bot_o_preview') > -1;
+
+  if (bot) return 0;
+
+  let score = 0;
+  const pageViews = leadNum_(lead.PageViews, 0);
+  const catalogClicks = leadNum_(lead.CatalogClicks, 0);
+  const shareOpens = leadNum_(lead.ShareOpens, 0);
+  const copyLinks = leadNum_(lead.CopyLinks, 0);
+  const whatsappShares = leadNum_(lead.WhatsappShares, 0);
+  const joinChannel = leadNum_(lead.JoinChannel, 0);
+  const intentMax = leadNum_(lead.IntentMax, 0);
+  const intentTotal = leadNum_(lead.IntentTotal, 0);
+  const catalogsViewedMax = leadNum_(lead.CatalogsViewedMax, 0);
+  const clickCountMax = leadNum_(lead.ClickCountMax, 0);
+  const engagedMax = leadNum_(lead.EngagedSecondsMax, 0);
+  const scrollMax = leadNum_(lead.ScrollMax, 0);
+
+  score += Math.min(12, pageViews * 3);
+  score += Math.min(42, catalogClicks * 18);
+  score += Math.min(24, shareOpens * 12);
+  score += Math.min(34, copyLinks * 22);
+  score += Math.min(38, whatsappShares * 28);
+  score += Math.min(36, joinChannel * 30);
+
+  if (leadBool_(lead.ReturningUser)) score += 15;
+  if (catalogsViewedMax >= 2) score += 15;
+  if (catalogsViewedMax >= 3) score += 10;
+  if (clickCountMax >= 2) score += 10;
+  if (clickCountMax >= 4) score += 10;
+  if (intentMax >= 5) score += 12;
+  if (intentTotal >= 8) score += 10;
+  if (intentTotal >= 15) score += 10;
+  if (engagedMax >= 15) score += 8;
+  if (engagedMax >= 30) score += 8;
+  if (scrollMax >= 50) score += 8;
+  if (scrollMax >= 80) score += 6;
+  if (value_(lead.UTM_Source) || value_(lead.UTM_Campaign) || value_(lead.Campaña)) score += 6;
+  if (value_(lead.CustomerPhone)) score += 28;
+  if (/ios|macos/i.test(String(lead.SO || ''))) score += 4;
+
+  if (flags.indexOf('tracking_limitado') > -1) score -= 8;
+  if (flags.indexOf('posible_proxy_datacenter') > -1) score -= 12;
+
+  return Math.max(0, Math.min(100, Math.round(score)));
+}
+
+function buildLeadReason_(lead) {
+  const parts = [];
+  const catalogClicks = leadNum_(lead.CatalogClicks, 0);
+  const whatsappShares = leadNum_(lead.WhatsappShares, 0);
+  const copyLinks = leadNum_(lead.CopyLinks, 0);
+  const shareOpens = leadNum_(lead.ShareOpens, 0);
+  const joinChannel = leadNum_(lead.JoinChannel, 0);
+  const catalogsViewed = leadNum_(lead.CatalogsViewedMax, 0);
+  const engaged = leadNum_(lead.EngagedSecondsMax, 0);
+  const scroll = leadNum_(lead.ScrollMax, 0);
+
+  if (value_(lead.CustomerPhone)) parts.push('Dejó número de WhatsApp');
+  if (catalogClicks) parts.push('Abrió catálogo ' + catalogClicks + ' vez/veces');
+  if (catalogsViewed >= 2) parts.push('Vio ' + catalogsViewed + ' catálogos en la sesión');
+  if (whatsappShares) parts.push('Compartió por WhatsApp');
+  if (copyLinks) parts.push('Copió enlace');
+  if (shareOpens) parts.push('Abrió modal de compartir');
+  if (joinChannel) parts.push('Entró al canal');
+  if (leadBool_(lead.ReturningUser)) parts.push('Usuario recurrente');
+  if (engaged >= 15) parts.push('Permanencia alta: ' + engaged + 's');
+  if (scroll >= 50) parts.push('Scroll: ' + scroll + '%');
+  if (value_(lead.Flags)) parts.push('Flags: ' + lead.Flags);
+
+  return parts.length ? parts.join(' · ') : 'Actividad baja o inicial';
+}
+
+function buildLeadAction_(lead) {
+  const tipo = cleanText_(lead.TipoCliente);
+
+  if (tipo.indexOf('bot') > -1) {
+    return 'No contactar. Probable vista previa, bot o tráfico técnico.';
+  }
+
+  if (tipo.indexOf('caliente') > -1) {
+    return 'Contactar de inmediato por WhatsApp. Preguntar qué producto o categoría le interesa, cantidad aproximada, ciudad de entrega y fecha en que lo necesita.';
+  }
+
+  if (value_(lead.CustomerPhone) && tipo.indexOf('frío') === -1) {
+    return 'Contactar por WhatsApp el mismo día. No mencionar catálogo específico; preguntar categoría de interés, producto, cantidad y ciudad de entrega.';
+  }
+
+  if (tipo.indexOf('interesado') > -1) {
+    return 'Hacer seguimiento el mismo día. Enviar mensaje consultivo y pedir captura del producto o indicar categoría de interés + cantidad aproximada.';
+  }
+
+  if (tipo.indexOf('protegido') > -1) {
+    return 'Revisar si repite visita. No asumir identidad; usar solo como señal de tráfico protegido o incompleto.';
+  }
+
+  return 'Remarketing suave. Mantener en observación hasta que abra catálogo, comparta, copie enlace o repita visita.';
+}
+
+function buildLeadMessage_(lead) {
+  const tipo = cleanText_(lead.TipoCliente);
+
+  if (tipo.indexOf('bot') > -1) return 'NO ENVIAR: probable bot, preview o tráfico técnico.';
+
+  if (tipo.indexOf('caliente') > -1) {
+    return 'Hola 👋 gracias por revisar nuestros catálogos. Con gusto le damos una atención personalizada. ¿Qué producto o categoría le interesa más y para qué tipo de compra lo necesita: evento, negocio, decoración o uso personal? Si puede, envíenos captura del producto y la cantidad aproximada para cotizarle mejor.';
+  }
+
+  if (tipo.indexOf('interesado') > -1) {
+    return 'Hola 👋 gracias por visitar nuestros catálogos. Para asesorarle mejor, ¿qué producto o categoría está buscando? Puede enviarnos una captura del producto que le gustó, la cantidad aproximada y la ciudad de entrega.';
+  }
+
+  return 'Hola 👋 gracias por visitaros. Cuéntenos qué producto o categoría le interesa y con gusto le ayudamos con opciones, disponibilidad y cotización según cantidad y ciudad de entrega.';
+}
+
+function buildLeadWhatsappLink_(lead) {
+  const phone = normalizeWhatsappPhoneForLead_(lead.CustomerPhone, lead.CustomerCountry || lead.IP_CountryCode || lead.IP_Country);
+  if (!phone) return 'SIN TELEFONO';
+
+  return 'https://wa.me/' + phone + '?text=' + encodeURIComponent(lead.MensajeSugerido || 'Hola, con gusto le asesoramos.');
+}
+
+function normalizeWhatsappPhoneForLead_(phone, country) {
+  let digits = normalizePhone_(phone);
+  if (!digits) return '';
+
+  const countryText = cleanText_(country);
+
+  if (digits.length === 10 && digits.charAt(0) === '3') {
+    digits = '57' + digits;
+  } else if (digits.length === 10 && (countryText === 'mx' || countryText.indexOf('mex') > -1)) {
+    digits = '52' + digits;
+  }
+
+  return digits;
+}
+
+function detectLeadFlags_(payload) {
+  const flags = [];
+  const ip = value_(payload.ip || payload.IP);
+  const device = cleanText_(payload.dispositivo || payload.Dispositivo || payload.device);
+  const browser = cleanText_(payload.navegador || payload.Navegador || payload.browser);
+  const ua = String(payload.ua || payload.UserAgent || '').toLowerCase();
+  const org = String(payload.ip_org || payload.IP_Org || '').toLowerCase();
+
+  if (!ip) flags.push('ip_oculta');
+  if (!device || device === 'unknown' || device === 'no detectado') flags.push('dispositivo_no_detectado');
+  if (!browser || browser === 'unknown' || browser === 'no detectado') flags.push('navegador_no_detectado');
+
+  if (!ip || !device || !browser || device === 'unknown' || browser === 'unknown') {
+    flags.push('tracking_limitado');
+  }
+
+  if (/bot|crawler|spider|preview|facebookexternalhit|slurp|headless|phantom|curl|wget|python|go-http|httpclient/i.test(ua)) {
+    flags.push('bot_o_preview');
+  }
+
+  if (/vpn|proxy|hosting|datacenter|data center|cloudflare|amazon|aws|google cloud|azure|microsoft|digitalocean|ovh|hetzner|fastly/i.test(org)) {
+    flags.push('posible_proxy_datacenter');
+  }
+
+  return uniqueArray_(flags);
+}
+
+function rebuildLeadSheetFromTracking() {
+  const ui = SpreadsheetApp.getUi();
+  const confirm = ui.alert(
+    'Reconstruir hoja Lead',
+    'Esto recalculará la hoja Lead usando todos los registros actuales de Hoja 1. Se conservarán, cuando exista el mismo LeadKey, Responsable, NotasComercial, ProximaAccion, FechaSeguimiento y EstadoLead.\n\n¿Desea continuar?',
+    ui.ButtonSet.YES_NO
+  );
+
+  if (confirm !== ui.Button.YES) return;
+
+  const ss = SpreadsheetApp.openById(SHEET_ID);
+  const dataSheet = ss.getSheetByName(SHEET_NAME);
+  if (!dataSheet) throw new Error('No existe la hoja de datos: ' + SHEET_NAME);
+
+  const leadSheet = getOrCreateLeadSheet_(ss);
+  ensureLeadHeaders_(leadSheet);
+
+  const preservedManual = readManualLeadFields_(leadSheet);
+
+  leadSheet.clear();
+  ensureLeadHeaders_(leadSheet);
+  formatLeadSheet_(leadSheet);
+
+  const raw = dataSheet.getDataRange().getValues();
+  if (!raw || raw.length < 2) {
+    ui.alert('No hay registros suficientes en Hoja 1.');
+    return;
+  }
+
+  const headers = raw[0].map(function (h) { return String(h || '').trim(); });
+  const leadsByKey = {};
+
+  for (let i = 1; i < raw.length; i += 1) {
+    if (!raw[i].some(function (cell) { return String(cell || '').trim() !== ''; })) continue;
+
+    const payload = normalizeLeadPayloadFromTrackingRow_(headers, raw[i]);
+    const key = getLeadKeyFromPayload_(payload);
+    if (!key) continue;
+
+    if (!leadsByKey[key]) {
+      leadsByKey[key] = createEmptyLead_(key);
+      restoreManualFields_(leadsByKey[key], preservedManual[key]);
+    }
+
+    updateLeadObjectFromPayload_(leadsByKey[key], payload);
+  }
+
+  const rows = Object.keys(leadsByKey)
+    .map(function (key) {
+      finalizeLeadClassification_(leadsByKey[key]);
+      return buildLeadRow_(leadsByKey[key]);
+    })
+    .sort(function (a, b) {
+      const dateA = new Date(a[2] || 0).getTime();
+      const dateB = new Date(b[2] || 0).getTime();
+      return dateB - dateA;
+    });
+
+  if (rows.length) {
+    leadSheet.getRange(2, 1, rows.length, LEAD_HEADERS.length).setValues(rows);
+    setLeadColumnFormat_(leadSheet, ['FechaPrimerEvento', 'FechaUltimoEvento', 'FechaSeguimiento', 'UpdatedAt'], 'dd/MM/yyyy HH:mm:ss', Math.max(rows.length, 1));
+    setLeadColumnFormat_(leadSheet, ['Score', 'TotalEventos', 'PageViews', 'CatalogClicks', 'ShareOpens', 'CopyLinks', 'WhatsappShares', 'JoinChannel', 'IntentMax', 'IntentTotal', 'SecondsToClickMin', 'EngagedSecondsMax', 'ScrollMax', 'ClickCountMax', 'CatalogsViewedMax'], '0.0', Math.max(rows.length, 1));
+  }
+
+  ui.alert('Lead reconstruido ✅\n\nVisitantes clasificados: ' + rows.length);
+}
+
+function readManualLeadFields_(sheet) {
+  const out = {};
+  const lastRow = sheet.getLastRow();
+  if (lastRow < 2) return out;
+
+  const values = sheet.getRange(2, 1, lastRow - 1, LEAD_HEADERS.length).getValues();
+  values.forEach(function (row) {
+    const key = String(row[0] || '').trim();
+    if (!key) return;
+
+    const obj = {};
+    LEAD_HEADERS.forEach(function (header, index) {
+      obj[header] = row[index];
+    });
+
+    out[key] = {
+      EstadoLead: obj.EstadoLead,
+      Responsable: obj.Responsable,
+      NotasComercial: obj.NotasComercial,
+      ProximaAccion: obj.ProximaAccion,
+      FechaSeguimiento: obj.FechaSeguimiento
+    };
+  });
+
+  return out;
+}
+
+function restoreManualFields_(lead, manual) {
+  if (!manual) return;
+  if (manual.EstadoLead) lead.EstadoLead = manual.EstadoLead;
+  if (manual.Responsable) lead.Responsable = manual.Responsable;
+  if (manual.NotasComercial) lead.NotasComercial = manual.NotasComercial;
+  if (manual.ProximaAccion) lead.ProximaAccion = manual.ProximaAccion;
+  if (manual.FechaSeguimiento) lead.FechaSeguimiento = manual.FechaSeguimiento;
+}
+
+function normalizeLeadPayloadFromTrackingRow_(headers, row) {
+  const obj = {};
+  headers.forEach(function (header, index) {
+    obj[header] = row[index];
+  });
+
+  return {
+    fecha: normalizeLeadDate_(obj.Fecha),
+    catalogo: obj.Catalogo,
+    fuente: obj.Fuente,
+    campana: obj['Campaña'],
+    destino: obj.Destino,
+    dispositivo: obj.Dispositivo,
+    so: obj.SO,
+    navegador: obj.Navegador,
+    idioma: obj.Idioma,
+    timezone: obj.Timezone,
+    referer: obj.Referer,
+    session_id: obj.SessionID,
+    seconds_to_click: obj.SecondsToClick,
+    utm_source: obj.UTM_Source,
+    utm_medium: obj.UTM_Medium,
+    utm_campaign: obj.UTM_Campaign,
+    utm_content: obj.UTM_Content,
+    utm_term: obj.UTM_Term,
+    ua: obj.UserAgent,
+    page: obj.PageURL,
+    visitor_id: obj.VisitorID,
+    event_name: obj.EventName,
+    event_id: obj.EventID,
+    event_source: obj.EventSource,
+    first_landing_url: obj.FirstLandingURL,
+    first_referrer: obj.FirstReferer,
+    engaged_seconds: obj.EngagedSeconds,
+    scroll_percent: obj.ScrollPercent,
+    target_domain: obj.TargetDomain,
+    click_count_session: obj.ClickCountSession,
+    catalogs_viewed_session: obj.CatalogsViewedSession,
+    returning_user: obj.ReturningUser,
+    intent_score: obj.IntentScore,
+    ip: obj.IP,
+    external_id: obj.ExternalID,
+    customer_email: obj.CustomerEmail,
+    customer_phone: obj.CustomerPhone,
+    customer_city: obj.CustomerCity,
+    customer_region: obj.CustomerRegion,
+    customer_country: obj.CustomerCountry,
+    ip_city: obj.IP_City,
+    ip_region: obj.IP_Region,
+    ip_country_name: obj.IP_CountryName,
+    ip_country_code: obj.IP_CountryCode,
+    ip_org: obj.IP_Org,
+    ip_asn: obj.IP_ASN
+  };
+}
+
+function normalizeLeadDate_(value) {
+  if (Object.prototype.toString.call(value) === '[object Date]' && !isNaN(value)) {
+    return value;
+  }
+  return parseDate_(value);
+}
+
+function incrementLeadNumber_(lead, header, amount) {
+  lead[header] = leadNum_(lead[header], 0) + Number(amount || 0);
+}
+
+function copyLeadIfPresent_(lead, header, value) {
+  const val = value_(value);
+  if (val) lead[header] = val;
+}
+
+function leadNum_(value, fallback) {
+  const n = num_(value, typeof fallback === 'undefined' ? 0 : fallback);
+  return n === '' ? (typeof fallback === 'undefined' ? 0 : fallback) : Number(n || 0);
+}
+
+function leadBool_(value) {
+  const text = cleanText_(value);
+  return value === true || text === 'true' || text === 'si' || text === 'sí' || text === '1' || text === 'yes';
+}
+
+function parseCsv_(text) {
+  return String(text || '')
+    .split(',')
+    .map(function (item) { return String(item || '').trim(); })
+    .filter(function (item) { return item !== ''; });
+}
+
+function uniqueArray_(arr) {
+  const seen = {};
+  const out = [];
+  (arr || []).forEach(function (item) {
+    const value = String(item || '').trim();
+    const key = cleanText_(value);
+    if (!value || seen[key]) return;
+    seen[key] = true;
+    out.push(value);
+  });
+  return out;
+}
+
+function addCsvUnique_(current, value) {
+  return uniqueArray_(parseCsv_(current).concat([value])).join(', ');
+}
+
+function mergeCsv_(a, b) {
+  return uniqueArray_(parseCsv_(a).concat(parseCsv_(b))).join(', ');
+}
