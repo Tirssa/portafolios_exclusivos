@@ -287,6 +287,183 @@
       opacity: 0.82;
     }
 
+
+    /* Landing de captura WhatsApp */
+    body.gate-active {
+      padding: 18px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    body.gate-active .page {
+      display: none;
+    }
+
+    .lead-gate {
+      width: 100%;
+      max-width: 610px;
+      margin: 0 auto;
+      display: none;
+    }
+
+    body.gate-active .lead-gate {
+      display: block;
+    }
+
+    .lead-card {
+      background: linear-gradient(180deg, #f7f3ec 0%, #e9e4da 100%);
+      border-radius: 32px;
+      padding: 34px 24px 26px;
+      box-shadow: 0 18px 45px rgba(0, 0, 0, 0.16);
+      border: 1px solid rgba(255, 255, 255, 0.55);
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .lead-card::before {
+      content: '';
+      position: absolute;
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.42);
+      top: -70px;
+      right: -60px;
+    }
+
+    .lead-badge {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 34px;
+      padding: 7px 14px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.78);
+      font-size: 12px;
+      font-weight: 800;
+      color: #33363d;
+      margin-bottom: 18px;
+      box-shadow: var(--shadow-soft);
+    }
+
+    .lead-card h1 {
+      position: relative;
+      font-size: 28px;
+      line-height: 1.05;
+      letter-spacing: -0.04em;
+      margin-bottom: 12px;
+      color: #171a20;
+    }
+
+    .lead-copy {
+      position: relative;
+      max-width: 470px;
+      margin: 0 auto 22px;
+      color: #42464f;
+      font-size: 14px;
+      line-height: 1.52;
+      font-weight: 500;
+    }
+
+    .lead-form {
+      position: relative;
+      display: grid;
+      gap: 10px;
+      text-align: left;
+      max-width: 430px;
+      margin: 0 auto;
+    }
+
+    .lead-label {
+      font-size: 12px;
+      font-weight: 800;
+      color: #2f333b;
+      padding-left: 6px;
+      margin-top: 2px;
+    }
+
+    .lead-input,
+    .lead-select {
+      width: 100%;
+      min-height: 50px;
+      border: 1px solid rgba(0, 0, 0, 0.08);
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.88);
+      color: #171a20;
+      font-size: 15px;
+      font-weight: 700;
+      padding: 0 18px;
+      outline: none;
+      box-shadow: var(--shadow-soft);
+    }
+
+    .lead-input:focus,
+    .lead-select:focus {
+      border-color: rgba(17, 24, 39, 0.38);
+      box-shadow: 0 0 0 4px rgba(17, 24, 39, 0.08), var(--shadow-soft);
+    }
+
+    .lead-consent {
+      display: flex;
+      align-items: flex-start;
+      gap: 9px;
+      font-size: 11px;
+      line-height: 1.35;
+      color: #4a4e56;
+      margin: 4px 4px 2px;
+      cursor: pointer;
+    }
+
+    .lead-consent input {
+      margin-top: 2px;
+      flex: 0 0 auto;
+    }
+
+    .lead-submit {
+      width: 100%;
+      min-height: 52px;
+      border: none;
+      border-radius: 999px;
+      background: #15171d;
+      color: #fff;
+      font-size: 15px;
+      font-weight: 900;
+      cursor: pointer;
+      margin-top: 6px;
+      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.18);
+      transition: transform 0.2s ease, opacity 0.2s ease;
+    }
+
+    .lead-submit:hover {
+      transform: translateY(-1px);
+    }
+
+    .lead-submit:disabled {
+      opacity: 0.68;
+      cursor: wait;
+      transform: none;
+    }
+
+    .lead-error {
+      min-height: 16px;
+      text-align: center;
+      color: #9f1239;
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .lead-mini {
+      position: relative;
+      max-width: 380px;
+      margin: 12px auto 0;
+      font-size: 10.5px;
+      line-height: 1.35;
+      color: #636873;
+    }
+
     .modal-overlay {
       position: fixed;
       inset: 0;
@@ -488,6 +665,23 @@
         padding: 8px;
       }
 
+      body.gate-active {
+        padding: 10px;
+      }
+
+      .lead-card {
+        border-radius: 26px;
+        padding: 28px 18px 22px;
+      }
+
+      .lead-card h1 {
+        font-size: 24px;
+      }
+
+      .lead-copy {
+        font-size: 13px;
+      }
+
       .page {
         max-width: 100%;
       }
@@ -522,7 +716,46 @@
     }
   </style>
 </head>
-<body>
+<body class="gate-active">
+  <div class="lead-gate" id="leadGate" aria-labelledby="leadGateTitle">
+    <div class="lead-card">
+      <div class="lead-badge">Atención personalizada ✨</div>
+      <h1 id="leadGateTitle">Antes de ver nuestros catálogos</h1>
+      <p class="lead-copy">Regálenos su número de WhatsApp para brindarle una mejor experiencia, asesoría rápida y acompañamiento personalizado según el producto que esté buscando.</p>
+
+      <form id="leadPhoneForm" class="lead-form" autocomplete="on">
+        <label class="lead-label" for="customerCountry">País</label>
+        <select id="customerCountry" class="lead-select" name="customerCountry" required>
+          <option value="CO" selected>Colombia +57</option>
+          <option value="MX">México +52</option>
+          <option value="OTHER">Otro país</option>
+        </select>
+
+        <label class="lead-label" for="customerPhone">Número de WhatsApp</label>
+        <input
+          id="customerPhone"
+          class="lead-input"
+          name="customerPhone"
+          type="tel"
+          inputmode="tel"
+          autocomplete="tel"
+          placeholder="Ej: 300 123 4567"
+          required
+        />
+
+        <label class="lead-consent">
+          <input id="customerConsent" type="checkbox" required />
+          <span>Acepto ser contactado(a) por WhatsApp para recibir asesoría sobre catálogos, productos y cotizaciones.</span>
+        </label>
+
+        <button class="lead-submit" id="leadSubmitBtn" type="submit">Ir a catálogos</button>
+        <div class="lead-error" id="leadError" role="alert"></div>
+      </form>
+
+      <p class="lead-mini">Su número se usará solo para atención comercial.</p>
+    </div>
+  </div>
+
   <div class="page">
     <div class="phone-shell">
       <div class="topbar">
@@ -639,6 +872,7 @@
   LINKTREE_COVER_FALLBACK: 'https://tirssagallery.com/wp-content/uploads/2025/01/logo.jpg',
   LINKTREE_SHARE_IMAGE: 'https://tirssagallery.com/plat1/',
   LINKTREE_SHARE_FALLBACK: 'https://tirssagallery.com/wp-content/uploads/2025/01/logo.jpg',
+  REQUIRE_WHATSAPP_BEFORE_CATALOGS: true,
   LINKTREE_DESCRIPTION:
     'Catálogos en Colombia 🏡✨ Copas y decoración únicas para tu hogar y eventos. Diseños exclusivos con calidad y estilo para hacer cada ocasión especial.',
   AGOTADOS_CHANNEL_URL:
@@ -805,6 +1039,13 @@
     const previewTitle = document.getElementById('previewTitle');
     const previewSubtitle = document.getElementById('previewSubtitle');
     const copyTitle = document.getElementById('copyTitle');
+    const leadGate = document.getElementById('leadGate');
+    const leadPhoneForm = document.getElementById('leadPhoneForm');
+    const customerPhoneInput = document.getElementById('customerPhone');
+    const customerCountrySelect = document.getElementById('customerCountry');
+    const customerConsent = document.getElementById('customerConsent');
+    const leadSubmitBtn = document.getElementById('leadSubmitBtn');
+    const leadError = document.getElementById('leadError');
 
     const PAGE_START_MS = Date.now();
     let currentShareData = null;
@@ -813,6 +1054,153 @@
     let maxScrollPercent = 0;
     let publicIp = storageGet('session', 'tirssa_public_ip') || '';
     let publicIpPromise = null;
+
+
+    function normalizePhoneDigits(value) {
+      return String(value || '').replace(/\D/g, '');
+    }
+
+    function getCountryMeta(countryCode) {
+      const code = String(countryCode || 'CO').toUpperCase();
+      if (code === 'MX') {
+        return { code: 'MX', dial: '52', name: 'Mexico' };
+      }
+      if (code === 'OTHER') {
+        return { code: '', dial: '', name: '' };
+      }
+      return { code: 'CO', dial: '57', name: 'Colombia' };
+    }
+
+    function normalizeWhatsappNumber(rawPhone, countryCode) {
+      let digits = normalizePhoneDigits(rawPhone);
+      const country = getCountryMeta(countryCode);
+
+      if (!digits) return '';
+
+      // Colombia: celular nacional de 10 dígitos inicia en 3
+      if (country.code === 'CO' && digits.length === 10 && digits.charAt(0) === '3') {
+        digits = country.dial + digits;
+      }
+
+      // México: número nacional de 10 dígitos
+      if (country.code === 'MX' && digits.length === 10) {
+        digits = country.dial + digits;
+      }
+
+      // Si el usuario escribió 0057 / 0052, convertir a formato internacional limpio
+      if (digits.indexOf('00') === 0) {
+        digits = digits.slice(2);
+      }
+
+      return digits;
+    }
+
+    function isValidWhatsappNumber(normalizedPhone, countryCode) {
+      const country = getCountryMeta(countryCode);
+      const digits = normalizePhoneDigits(normalizedPhone);
+
+      if (country.code === 'CO') {
+        return /^57[3]\d{9}$/.test(digits);
+      }
+
+      if (country.code === 'MX') {
+        return /^52\d{10}$/.test(digits);
+      }
+
+      return digits.length >= 8 && digits.length <= 15;
+    }
+
+    function getStoredCustomerData() {
+      return {
+        customer_phone: storageGet('local', 'tirssa_customer_phone') || storageGet('session', 'tirssa_customer_phone') || '',
+        customer_country: storageGet('local', 'tirssa_customer_country') || '',
+        customer_region: storageGet('local', 'tirssa_customer_region') || '',
+        customer_city: storageGet('local', 'tirssa_customer_city') || '',
+        lead_status: storageGet('local', 'tirssa_lead_status') || ''
+      };
+    }
+
+    function setStoredCustomerData(data) {
+      const safePhone = normalizePhoneDigits(data.customer_phone || '');
+      if (safePhone) {
+        storageSet('local', 'tirssa_customer_phone', safePhone);
+        storageSet('session', 'tirssa_customer_phone', safePhone);
+      }
+      storageSet('local', 'tirssa_customer_country', data.customer_country || '');
+      storageSet('local', 'tirssa_customer_region', data.customer_region || '');
+      storageSet('local', 'tirssa_customer_city', data.customer_city || '');
+      storageSet('local', 'tirssa_lead_status', data.lead_status || 'Telefono capturado');
+      storageSet('local', 'tirssa_phone_captured_at', new Date().toISOString());
+    }
+
+    function hasStoredCustomerPhone() {
+      return Boolean(normalizePhoneDigits(getStoredCustomerData().customer_phone));
+    }
+
+    function showCatalogsAfterLeadCapture() {
+      document.body.classList.remove('gate-active');
+      if (statusEl) statusEl.textContent = 'Selecciona un catálogo';
+    }
+
+    function showLeadGateIfNeeded() {
+      if (!CONFIG.REQUIRE_WHATSAPP_BEFORE_CATALOGS || hasStoredCustomerPhone()) {
+        showCatalogsAfterLeadCapture();
+      } else {
+        document.body.classList.add('gate-active');
+      }
+    }
+
+    async function handleLeadPhoneSubmit(event) {
+      event.preventDefault();
+
+      const countryMeta = getCountryMeta(customerCountrySelect.value);
+      const normalizedPhone = normalizeWhatsappNumber(customerPhoneInput.value, customerCountrySelect.value);
+
+      leadError.textContent = '';
+
+      if (!customerConsent.checked) {
+        leadError.textContent = 'Debe aceptar la autorización para continuar.';
+        return;
+      }
+
+      if (!isValidWhatsappNumber(normalizedPhone, customerCountrySelect.value)) {
+        leadError.textContent = 'Revise el número de WhatsApp. Ejemplo Colombia: 300 123 4567.';
+        return;
+      }
+
+      leadSubmitBtn.disabled = true;
+      leadSubmitBtn.textContent = 'Guardando...';
+
+      const customerData = {
+        customer_phone: normalizedPhone,
+        customer_country: countryMeta.code || countryMeta.name,
+        customer_region: '',
+        customer_city: '',
+        lead_status: 'Telefono capturado'
+      };
+
+      setStoredCustomerData(customerData);
+
+      await waitForPublicIp(1200);
+
+      trackEvent('whatsapp_capture', {
+        ...customerData,
+        event_source: 'whatsapp_gate',
+        intent_score: 8,
+        target: window.location.href || '',
+        target_domain: window.location.hostname || '',
+        catalogo: '',
+        value: '',
+        currency: 'COP'
+      });
+
+      setTimeout(() => {
+        showCatalogsAfterLeadCapture();
+        leadSubmitBtn.disabled = false;
+        leadSubmitBtn.textContent = 'Ir a catálogos';
+      }, 260);
+    }
+
 
     function safeOpen(url) {
       window.open(url, '_blank', 'noopener,noreferrer');
@@ -1135,6 +1523,7 @@
       if (eventName === 'share_whatsapp') score = 5;
       if (eventName === 'join_channel') score = 6;
       if (eventName === 'return_visit') score = 7;
+      if (eventName === 'whatsapp_capture') score = 8;
 
       if (eventName === 'catalog_click' && Number(extras.catalogs_viewed_session || 0) >= 2) score += 2;
       if (Number(extras.scroll_percent || 0) >= 50) score += 1;
@@ -1145,6 +1534,7 @@
     function buildTrackingPayload(eventName, overrides) {
       const pageUtm = getUTMParams();
       const targetUtm = extractAttributionFromUrl((overrides && overrides.target) || '');
+      const customerData = getStoredCustomerData();
       const returningUser = isReturningUser();
       const mergedUtm = {
         utm_source: targetUtm.utm_source || pageUtm.utm_source,
@@ -1207,6 +1597,11 @@
           local_hour: new Date().getHours(),
           local_day_of_week: getLocalDayOfWeek(),
           intent_score: 0,
+          customer_phone: customerData.customer_phone || '',
+          customer_country: customerData.customer_country || '',
+          customer_city: customerData.customer_city || '',
+          customer_region: customerData.customer_region || '',
+          lead_status: customerData.lead_status || '',
           currency: 'COP',
           value: ''
         },
@@ -1493,7 +1888,12 @@ ${finalUrl}`);
       if (currentPercent > maxScrollPercent) maxScrollPercent = currentPercent;
     });
 
+    if (leadPhoneForm) {
+      leadPhoneForm.addEventListener('submit', handleLeadPhoneSubmit);
+    }
+
     persistFirstTouch();
+    showLeadGateIfNeeded();
 
 // Iniciar captura de IP apenas cargue la página
 fetchPublicIp().catch((error) => {
